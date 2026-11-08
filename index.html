@@ -59,6 +59,23 @@
       }
       .mobile-hero-ctas > a:last-child { grid-column: 1 / -1; }
     }
+    .hero-content-grid {
+      display: grid !important;
+      grid-template-columns: minmax(0, 1fr) !important;
+      gap: 2.5rem !important;
+      align-items: center !important;
+    }
+    .hero-copy {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 1rem !important;
+    }
+    .hero-image-column { position: relative !important; margin-top: 1.5rem !important; }
+    @media (min-width: 1024px) {
+      .hero-content-grid { grid-template-columns: repeat(12, minmax(0, 1fr)) !important; }
+      .hero-copy { grid-column: span 7 / span 7 !important; }
+      .hero-image-column { grid-column: span 5 / span 5 !important; margin-top: 0 !important; }
+    }
   </style>
   
   <!-- Tailwind CSS CDN -->
@@ -290,10 +307,10 @@
       <section class="relative w-full overflow-hidden bg-surface-container-low border-b border-outline-variant/20">
         <div class="absolute inset-0 z-0 pointer-events-none" style="background: radial-gradient(ellipse at top left, rgba(139,38,62,.08), transparent 60%), radial-gradient(ellipse at bottom right, rgba(255,185,95,.12), transparent 55%)"></div>
         <div class="relative z-10 max-w-[1280px] mx-auto px-gutter py-space-xl lg:py-24">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center hero-content-grid">
             
             <!-- Text Column -->
-            <div class="lg:col-span-7 flex flex-col gap-space-md">
+            <div class="lg:col-span-7 flex flex-col gap-space-md hero-copy">
               <div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed w-fit shadow-xs">
                 <span class="material-symbols-outlined text-[16px] text-primary material-symbols-fill">local_fire_department</span>
                 <span class="font-label-sm text-xs uppercase tracking-wider font-bold">Tradición Tica en San Juan de Tibás</span>
@@ -342,9 +359,9 @@
             </div>
 
             <!-- Visual Hero Mosaic -->
-            <div class="lg:col-span-5 relative mt-6 lg:mt-0">
+            <div class="lg:col-span-5 relative mt-6 lg:mt-0 hero-image-column">
               <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-surface-container border-2 border-white/60 group hero-image-frame" style="aspect-ratio:4/3">
-                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Casado Típico Campesino" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_t9TTEXsImsRryn-wj71v5Agmyx8jA3xuRLScIX9_QEZsUspxBpv55_Sb2zLC-W8bKZVPX_sf7ZSlxFAxA6QIG9WXgTJgAzMOC34pNKndkcfaOSiTvkmGcqszzyQ_NIUtA6Llh--MgB6EmjHI9YIuxFjj4lFh7LCiV9vTQma5PXYwKpP920SmCmRgUZUUjShesIXCb_ua6tQ2nTirnGAg_XpjQ0PlQIiJNGNXWCTs=w640" width="1200" height="900" loading="eager" decoding="async" fetchpriority="high"/>
+                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Casado Típico Campesino" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_t9TTEXsImsRryn-wj71v5Agmyx8jA3xuRLScIX9_QEZsUspxBpv55_Sb2zLC-W8bKZVPX_sf7ZSlxFAxA6QIG9WXgTJgAzMOC34pNKndkcfaOSiTvkmGcqszzyQ_NIUtA6Llh--MgB6EmjHI9YIuxFjj4lFh7LCiV9vTQma5PXYwKpP920SmCmRgUZUUjShesIXCb_ua6tQ2nTirnGAg_XpjQ0PlQIiJNGNXWCTs=w512" width="1200" height="900" loading="eager" decoding="async" fetchpriority="high"/>
                 <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
                 <div class="absolute bottom-space-md left-space-md right-space-md text-on-primary flex items-end justify-between">
                   <div>
