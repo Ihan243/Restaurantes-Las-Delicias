@@ -63,14 +63,14 @@
       display: grid !important;
       grid-template-columns: minmax(0, 1fr) !important;
       gap: 2.5rem !important;
-      align-items: center !important;
+      align-items: start !important;
     }
     .hero-copy {
       display: flex !important;
       flex-direction: column !important;
       gap: 1rem !important;
     }
-    .hero-image-column { position: relative !important; margin-top: 1.5rem !important; }
+    .hero-image-column { position: relative !important; align-self: start !important; margin-top: 1.5rem !important; }
     @media (min-width: 1024px) {
       .hero-content-grid { grid-template-columns: repeat(12, minmax(0, 1fr)) !important; }
       .hero-copy { grid-column: span 7 / span 7 !important; }
