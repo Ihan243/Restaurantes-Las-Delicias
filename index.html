@@ -36,6 +36,29 @@
     @media (min-width: 1024px) {
       .hero-image-frame { height: clamp(280px, 29vw, 380px) !important; aspect-ratio: auto !important; }
     }
+    @media (max-width: 639px) {
+      #mobileMenuBtn { min-width: 44px; min-height: 44px; }
+      #mobileDrawer nav a { min-height: 44px; box-sizing: border-box; }
+      footer nav a { display: inline-flex; align-items: center; min-height: 44px; }
+      .mobile-hero-ctas {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: .5rem !important;
+        padding-top: 1rem !important;
+      }
+      .mobile-hero-ctas > a {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 48px;
+        box-sizing: border-box;
+        padding-left: .5rem !important;
+        padding-right: .5rem !important;
+        text-align: center;
+      }
+      .mobile-hero-ctas > a:last-child { grid-column: 1 / -1; }
+    }
   </style>
   
   <!-- Tailwind CSS CDN -->
@@ -143,7 +166,7 @@
       <!-- Logo & Branding -->
       <div class="flex items-center gap-space-md shrink-0">
         <a class="flex items-center gap-space-sm group" href="index.html">
-          <img alt="Restaurante Las Delicias Logo" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX=w72" width="36" height="36" loading="eager" decoding="async"/>
+          <img alt="Restaurante Las Delicias Logo" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX=w72" width="36" height="36" loading="eager" decoding="async" style="width:36px;height:36px;aspect-ratio:36/36;flex:none"/>
           <div class="flex flex-col">
             <span class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors font-bold tracking-tight">Las Delicias</span>
             <span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider hidden sm:block">Sabor Típico • Tibás</span>
@@ -201,7 +224,7 @@
       <!-- Drawer Header -->
       <div class="flex items-center justify-between pb-space-sm border-b border-outline-variant/30">
         <div class="flex items-center gap-space-xs">
-          <img alt="Logo" class="h-7 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX=w72" width="28" height="28" loading="lazy" fetchpriority="low" decoding="async"/>
+          <img alt="Logo" class="h-7 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX=w72" width="28" height="28" loading="lazy" fetchpriority="low" decoding="async" style="width:28px;height:28px;aspect-ratio:28/28;flex:none"/>
           <span class="font-headline-sm text-title-lg font-bold text-primary">Las Delicias</span>
         </div>
         <button class="p-1 rounded-lg text-on-surface-variant hover:text-primary transition-colors" id="closeDrawerBtn" aria-label="Cerrar Menú">
@@ -302,7 +325,7 @@
               </div>
 
               <!-- Action CTAs -->
-              <div class="flex flex-wrap items-center gap-space-sm pt-space-md">
+              <div class="flex flex-wrap items-center gap-space-sm pt-space-md mobile-hero-ctas">
                 <a class="inline-flex items-center gap-space-xs px-6 py-3 rounded-lg bg-primary text-on-primary font-bold text-sm shadow-md hover:bg-primary-container transition-all" href="menu.html">
                   <span class="material-symbols-outlined text-[20px]">restaurant_menu</span>
                   <span>Ver Menú Completo</span>
@@ -843,7 +866,7 @@
         <!-- Col 1 -->
         <div class="flex flex-col gap-space-sm">
           <div class="flex items-center gap-space-sm">
-            <img alt="Restaurante Las Delicias Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX=w72" width="32" height="32" loading="lazy" fetchpriority="low" decoding="async"/>
+            <img alt="Restaurante Las Delicias Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX=w72" width="32" height="32" loading="lazy" fetchpriority="low" decoding="async" style="width:32px;height:32px;aspect-ratio:32/32;flex:none"/>
             <span class="font-headline-sm text-lg font-bold text-primary">Las Delicias</span>
           </div>
           <p class="text-xs text-on-surface-variant leading-relaxed">
