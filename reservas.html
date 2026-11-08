@@ -225,7 +225,7 @@
     </div>
 
     <div class="flex flex-col gap-space-sm pt-space-md border-t border-outline-variant/30">
-      <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-lg bg-tertiary-container text-on-tertiary font-bold text-sm shadow-sm" href="https://wa.me/50622369755?text=Hola%20Restaurante%20Las%20Delicias,%20deseo%20hacer%20un%20pedido%20o%20reserva" target="_blank" rel="noopener noreferrer">
+      <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-lg bg-tertiary-container text-on-tertiary font-bold text-sm shadow-sm" href="https://wa.me/50663572479?text=Hola%20Restaurante%20Las%20Delicias,%20deseo%20hacer%20un%20pedido%20o%20reserva" target="_blank" rel="noopener noreferrer">
         <span class="material-symbols-outlined text-[18px]">chat</span>
         <span>WhatsApp Directo</span>
       </a>
@@ -417,7 +417,7 @@
                       <span class="material-symbols-outlined text-[20px]">send</span>
                       <span>Enviar Solicitud de Reserva</span>
                     </button>
-                    <a class="flex-1 inline-flex items-center justify-center gap-space-xs px-5 py-3 rounded-xl bg-tertiary-container text-on-tertiary font-bold text-xs sm:text-sm hover:bg-tertiary shadow-md transition-all active:scale-[0.99]" href="https://wa.me/50622369755?text=Hola%20Restaurante%20Las%20Delicias,%20deseo%20reservar%20una%20mesa" id="btnWhatsappDirect" rel="noopener noreferrer" target="_blank">
+                    <a class="flex-1 inline-flex items-center justify-center gap-space-xs px-5 py-3 rounded-xl bg-tertiary-container text-on-tertiary font-bold text-xs sm:text-sm hover:bg-tertiary shadow-md transition-all active:scale-[0.99]" href="https://wa.me/50663572479?text=Hola%20Restaurante%20Las%20Delicias,%20deseo%20reservar%20una%20mesa" id="btnWhatsappDirect" rel="noopener noreferrer" target="_blank">
                       <span class="material-symbols-outlined text-[20px]">chat</span>
                       <span>Reservar Directo por WhatsApp</span>
                     </a>
@@ -590,7 +590,7 @@
 
   <!-- FLOATING WHATSAPP ACTION BUTTON -->
   <aside class="fixed bottom-space-lg right-space-lg z-40 flex flex-col items-end gap-space-xs">
-    <a aria-label="WhatsApp Restaurante Las Delicias" class="group flex items-center gap-space-sm pl-space-md pr-space-sm py-space-sm rounded-full bg-tertiary-container text-on-tertiary shadow-[0_8px_20px_-3px_rgba(78,42,28,0.25)] hover:bg-tertiary transition-all duration-300 transform hover:-translate-y-0.5" href="https://wa.me/50622369755?text=Hola%20Restaurante%20Las%20Delicias,%20deseo%20hacer%20un%20pedido%20o%20reserva" rel="noopener noreferrer" target="_blank">
+    <a aria-label="WhatsApp Restaurante Las Delicias" class="group flex items-center gap-space-sm pl-space-md pr-space-sm py-space-sm rounded-full bg-tertiary-container text-on-tertiary shadow-[0_8px_20px_-3px_rgba(78,42,28,0.25)] hover:bg-tertiary transition-all duration-300 transform hover:-translate-y-0.5" href="https://wa.me/50663572479?text=Hola%20Restaurante%20Las%20Delicias,%20deseo%20hacer%20un%20pedido%20o%20reserva" rel="noopener noreferrer" target="_blank">
       <span class="hidden md:inline font-bold text-xs text-on-tertiary">¡Pedí por WhatsApp!</span>
       <div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-tertiary-container shadow-inner">
         <span class="material-symbols-outlined text-[24px]">chat</span>
@@ -699,7 +699,7 @@
         const time = (timeSelect && timeSelect.value) ? timeSelect.value : '';
         const guests = (guestsSelect && guestsSelect.value) ? guestsSelect.value : '';
         const msg = encodeURIComponent(`Hola Restaurante Las Delicias Tibás, deseo solicitar una reserva para ${name}. Fecha: ${date}, Hora: ${time}, Personas: ${guests}, Ocasión: ${selectedOccasion}.`);
-        waButton.href = `https://wa.me/50622369755?text=${msg}`;
+        waButton.href = `https://wa.me/50663572479?text=${msg}`;
       }
 
       if (nameInput) nameInput.addEventListener('input', updateWaLink);
@@ -728,7 +728,7 @@
           const openWa = confirm(`¡Gracias ${submittedName}! Solicitud registrada. ¿Desea abrir WhatsApp ahora para enviar la confirmación inmediata a nuestro personal en Tibás?`);
           if (openWa) {
             const msg = encodeURIComponent(`Hola Restaurante Las Delicias, acabo de llenar la solicitud de reserva para ${submittedName}. Fecha: ${submittedDate}, Hora: ${submittedTime}, Personas: ${submittedGuests}, Ocasión: ${selectedOccasion}.`);
-            window.open(`https://wa.me/50622369755?text=${msg}`, '_blank');
+            window.open(`https://wa.me/50663572479?text=${msg}`, '_blank');
           }
 
           setTimeout(() => {
