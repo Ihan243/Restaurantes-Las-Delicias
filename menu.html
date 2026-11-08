@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="web_standard" name="shell-type"/>
+  <title>Menú Típico &amp; Especialidades | Restaurante Las Delicias Tibás</title>
+  <meta name="description" content="Menú oficial de Restaurante Las Delicias en Tibás. Casados con bistec, pescado o chuleta, olla de carne de la abuela, gallo pinto campesino, chifrijo, frescos naturales y postres típicos."/>
+  
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .material-symbols-fill {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Hide scrollbar for category tabs */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "background": "#f8f9ff",
+            "surface": "#f8f9ff",
+            "surface-dim": "#d0dbed",
+            "surface-bright": "#f8f9ff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#eff4ff",
+            "surface-container": "#e6eeff",
+            "surface-container-high": "#dee9fc",
+            "surface-container-highest": "#d9e3f6",
+            "on-surface": "#121c2a",
+            "on-surface-variant": "#564244",
+            "inverse-surface": "#27313f",
+            "inverse-on-surface": "#eaf1ff",
+            "outline": "#897174",
+            "outline-variant": "#dcc0c2",
+            "surface-tint": "#a3394f",
+            "primary": "#6c0c28",
+            "on-primary": "#ffffff",
+            "primary-container": "#8b263e",
+            "on-primary-container": "#ffa3b0",
+            "inverse-primary": "#ffb2bc",
+            "secondary": "#5f5e5a",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#e5e2dc",
+            "on-secondary-container": "#656460",
+            "tertiary": "#4d2f00",
+            "on-tertiary": "#ffffff",
+            "tertiary-container": "#6c4300",
+            "on-tertiary-container": "#ffab31",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "primary-fixed": "#ffd9dd",
+            "primary-fixed-dim": "#ffb2bc",
+            "on-primary-fixed": "#400013",
+            "on-primary-fixed-variant": "#842039",
+            "secondary-fixed": "#e5e2dc",
+            "secondary-fixed-dim": "#c9c6c1",
+            "on-secondary-fixed": "#1c1c18",
+            "on-secondary-fixed-variant": "#474743",
+            "tertiary-fixed": "#ffddb8",
+            "tertiary-fixed-dim": "#ffb95f",
+            "on-tertiary-fixed": "#2a1700",
+            "on-tertiary-fixed-variant": "#653e00",
+            "surface-variant": "#d9e3f6"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "sm": "0.25rem",
+            "md": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "2xl": "1.5rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "gutter": "1.25rem",
+            "gutter-desktop": "2rem",
+            "margin": "1rem",
+            "margin-tablet": "2rem",
+            "margin-desktop": "3rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem"
+          },
+          fontFamily: {
+            "display-hero": ["Playfair Display", "serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "headline-md": ["Playfair Display", "serif"],
+            "headline-sm": ["Playfair Display", "serif"],
+            "title-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "title-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+  <!-- TOP MAIN NAVBAR -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(78,42,28,0.06)]" id="mainHeader">
+    <div class="h-20 max-w-[1280px] mx-auto px-gutter flex items-center justify-between gap-space-md">
+      <!-- Logo & Branding -->
+      <div class="flex items-center gap-space-md shrink-0">
+        <a class="flex items-center gap-space-sm group" href="index.html">
+          <img alt="Restaurante Las Delicias Logo" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX"/>
+          <div class="flex flex-col">
+            <span class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors font-bold tracking-tight">Las Delicias</span>
+            <span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider hidden sm:block">Sabor Típico • Tibás</span>
+          </div>
+        </a>
+        <div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface">
+          <span class="font-label-sm text-label-sm font-bold text-tertiary-container">★ 4.2</span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">(1,200+ reseñas)</span>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-1 xl:gap-space-xs">
+        <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="index.html">Inicio</a>
+        <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="index.html#nuestra-historia">Nuestra Historia</a>
+        <a aria-current="page" class="transition-all bg-primary-container text-on-primary font-bold rounded-lg px-3 py-1.5 shadow-sm text-sm" href="menu.html">Menú Típico</a>
+        <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="buscador.html">Buscador &amp; Especiales</a>
+        <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="index.html#galeria">Galería</a>
+        <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="index.html#opiniones">Opiniones</a>
+        <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="reservas.html">Reservas &amp; Contacto</a>
+      </nav>
+
+      <!-- Right Action Triggers -->
+      <div class="flex items-center gap-space-sm shrink-0">
+        <!-- Language Switcher Indicator -->
+        <div class="hidden sm:flex items-center rounded-full bg-surface-container p-1 text-xs">
+          <button class="px-2.5 py-1 rounded-full font-bold bg-primary text-on-primary shadow-xs transition-colors" type="button" title="Español">ES</button>
+          <button class="px-2.5 py-1 rounded-full font-semibold text-on-surface-variant hover:text-on-surface transition-colors" type="button" onclick="alert('English version is coming soon! Our staff is bilingual and welcomes you warmly.')" title="Switch to English">EN</button>
+        </div>
+
+        <a class="hidden 2xl:flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors shadow-xs" href="tel:+50622369755">
+          <span class="material-symbols-outlined text-[18px] text-primary">call</span>
+          <span>+506 2236 9755</span>
+        </a>
+
+        <a class="hidden sm:inline-flex items-center gap-space-xs px-4 py-2 rounded-lg bg-primary text-on-primary font-semibold text-sm hover:bg-primary-container hover:text-on-primary transition-all shadow-[0_2px_6px_-1px_rgba(78,42,28,0.2)]" href="reservas.html">
+          <span class="material-symbols-outlined text-[18px]">restaurant</span>
+          <span>Pedir / Reservar</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button (Hamburger) -->
+        <button class="lg:hidden p-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-primary" id="mobileMenuBtn" aria-label="Abrir Menú de Navegación">
+          <span class="material-symbols-outlined text-[26px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE-OVER NAVIGATION DRAWER -->
+  <div class="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden" id="mobileDrawerBackdrop"></div>
+  <aside class="fixed top-0 right-0 bottom-0 z-50 w-80 max-w-[85vw] bg-surface shadow-2xl transform translate-x-full transition-transform duration-300 ease-out flex flex-col justify-between p-space-lg lg:hidden" id="mobileDrawer">
+    <div class="flex flex-col gap-space-md">
+      <div class="flex items-center justify-between pb-space-sm border-b border-outline-variant/30">
+        <div class="flex items-center gap-space-xs">
+          <img alt="Logo" class="h-7 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX"/>
+          <span class="font-headline-sm text-title-lg font-bold text-primary">Las Delicias</span>
+        </div>
+        <button class="p-1 rounded-lg text-on-surface-variant hover:text-primary transition-colors" id="closeDrawerBtn" aria-label="Cerrar Menú">
+          <span class="material-symbols-outlined text-[24px]">close</span>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-1.5 pt-space-xs">
+        <a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-semibold text-sm transition-colors" href="index.html">
+          <span class="material-symbols-outlined text-[20px]">home</span>
+          <span>Inicio</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-bold text-sm" href="menu.html">
+          <span class="material-symbols-outlined text-[20px]">restaurant_menu</span>
+          <span>Menú Típico</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-semibold text-sm transition-colors" href="buscador.html">
+          <span class="material-symbols-outlined text-[20px]">search</span>
+          <span>Buscador &amp; Especiales</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-semibold text-sm transition-colors" href="index.html#nuestra-historia">
+          <span class="material-symbols-outlined text-[20px]">menu_book</span>
+          <span>Nuestra Historia</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-semibold text-sm transition-colors" href="index.html#galeria">
+          <span class="material-symbols-outlined text-[20px]">photo_library</span>
+          <span>Galería Típica</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-semibold text-sm transition-colors" href="index.html#opiniones">
+          <span class="material-symbols-outlined text-[20px]">reviews</span>
+          <span>Opiniones</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-semibold text-sm transition-colors" href="reservas.html">
+          <span class="material-symbols-outlined text-[20px]">table_bar</span>
+          <span>Reservas &amp; Contacto</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="flex flex-col gap-space-sm pt-space-md border-t border-outline-variant/30">
+      <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-lg bg-tertiary-container text-on-tertiary font-bold text-sm shadow-sm" href="https://wa.me/50622369755?text=Hola%20Restaurante%20Las%20Delicias,%20deseo%20ordenar%20platillos%20del%20menú" target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined text-[18px]">chat</span>
+        <span>WhatsApp Directo</span>
+      </a>
+      <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-lg bg-surface-container text-on-surface font-semibold text-sm hover:bg-surface-container-high transition-colors" href="tel:+50622369755">
+        <span class="material-symbols-outlined text-[18px] text-primary">call</span>
+        <span>Llamar: +506 2236 9755</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
+    <div class="flex flex-col w-full">
+
+      <!-- TOP EDITORIAL HEADER & ACTION BAR -->
+      <section class="w-full max-w-[1280px] mx-auto px-gutter pt-space-lg pb-space-md">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md bg-surface-container-low rounded-2xl p-space-lg md:p-space-xl shadow-sm relative overflow-hidden border border-outline-variant/20">
+          <div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+          
+          <div class="flex flex-col gap-space-xs max-w-2xl relative z-10">
+            <div class="flex items-center gap-space-xs text-primary font-bold text-xs uppercase tracking-wider">
+              <span class="material-symbols-outlined text-[18px]">skillet</span>
+              <span>Cocina Auténtica Costarricense • Tibás</span>
+            </div>
+            <h1 class="font-headline-lg text-3xl sm:text-4xl text-primary font-bold tracking-tight">
+              Nuestra Carta &amp; Sabor Típico
+            </h1>
+            <p class="text-sm sm:text-base text-on-surface-variant leading-relaxed">
+              Recetas ancestrales preparadas a fuego lento, tortillas palmeadas al instante en comal de barro y los ingredientes más frescos de nuestros agricultores locales.
+            </p>
+            <div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm mt-space-xs text-xs">
+              <span class="inline-flex items-center gap-1 font-semibold px-3 py-1 rounded-full bg-surface-container text-on-surface">
+                <span class="material-symbols-outlined text-[14px] text-tertiary-container">verified</span> 
+                Precios con 13% IVA y 10% servicio incluidos
+              </span>
+              <span class="inline-flex items-center gap-1 font-semibold px-3 py-1 rounded-full bg-surface-container text-on-surface">
+                <span class="material-symbols-outlined text-[14px] text-primary">schedule</span> 
+                Cocina continua 7:00 AM – 7:00 PM
+              </span>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm relative z-10 shrink-0">
+            <button class="inline-flex items-center justify-center gap-space-xs px-5 py-2.5 rounded-lg bg-surface-container-lowest text-primary font-bold text-xs shadow-xs hover:bg-surface hover:shadow-md transition-all border border-outline-variant/30" onclick="alert('Generando Menú Oficial de Restaurante Las Delicias (PDF)... Listo para guardar o imprimir.');">
+              <span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+              <span>Descargar Menú Oficial (PDF)</span>
+            </button>
+            <a class="inline-flex items-center justify-center gap-space-xs px-5 py-2.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs shadow-xs hover:bg-tertiary transition-all" href="buscador.html">
+              <span class="material-symbols-outlined text-[18px]">search</span>
+              <span>Buscador con Filtros</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- STICKY CATEGORY SELECTOR TABS -->
+      <section class="sticky top-20 z-30 w-full bg-surface/95 backdrop-blur-md py-space-sm shadow-[0_2px_8px_rgba(78,42,28,0.04)] border-y border-outline-variant/20">
+        <div class="max-w-[1280px] mx-auto px-gutter">
+          <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1" id="categoryTabs">
+            <button class="category-btn whitespace-nowrap px-4 py-2 rounded-full font-bold text-xs bg-primary text-on-primary transition-all flex items-center gap-1.5 shadow-sm" data-cat="all" onclick="filterMenu('all', this)" type="button">
+              <span class="material-symbols-outlined text-[18px]">restaurant_menu</span>
+              <span>Todo el Menú</span>
+            </button>
+            <button class="category-btn whitespace-nowrap px-4 py-2 rounded-full font-semibold text-xs bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5" data-cat="desayunos" onclick="filterMenu('desayunos', this)" type="button">
+              <span class="material-symbols-outlined text-[18px]">breakfast_dining</span>
+              <span>Desayunos Típicos</span>
+            </button>
+            <button class="category-btn whitespace-nowrap px-4 py-2 rounded-full font-semibold text-xs bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5" data-cat="casados" onclick="filterMenu('casados', this)" type="button">
+              <span class="material-symbols-outlined text-[18px]">lunch_dining</span>
+              <span>Casados &amp; Almuerzos</span>
+            </button>
+            <button class="category-btn whitespace-nowrap px-4 py-2 rounded-full font-semibold text-xs bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5" data-cat="especialidades" onclick="filterMenu('especialidades', this)" type="button">
+              <span class="material-symbols-outlined text-[18px]">soup_kitchen</span>
+              <span>Especialidades &amp; Carnes</span>
+            </button>
+            <button class="category-btn whitespace-nowrap px-4 py-2 rounded-full font-semibold text-xs bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all flex items-center gap-1.5" data-cat="bebidas-postres" onclick="filterMenu('bebidas-postres', this)" type="button">
+              <span class="material-symbols-outlined text-[18px]">coffee</span>
+              <span>Bebidas &amp; Postres</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN MENU SECTIONS -->
+      <div class="w-full max-w-[1280px] mx-auto px-gutter py-space-xl flex flex-col gap-space-xl">
+
+        <!-- CATEGORY 1: Desayunos y Platos Típicos -->
+        <section class="menu-category-section flex flex-col gap-space-lg" data-category="desayunos">
+          <div class="flex items-center justify-between border-b border-outline-variant/20 pb-space-sm">
+            <div>
+              <span class="text-xs text-tertiary font-bold uppercase tracking-wider">De 7:00 AM a 11:30 AM</span>
+              <h2 class="font-headline-md text-xl sm:text-2xl text-primary font-bold">Desayunos Tradicionales y Típicos</h2>
+            </div>
+            <span class="hidden sm:inline-block text-xs font-semibold text-on-surface-variant bg-surface-container px-3 py-1 rounded-full">Hecho al comal</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+            <!-- Dish 1 -->
+            <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
+              <div class="relative h-52 w-full overflow-hidden bg-surface-container">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Gallo Pinto Especial" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr-mskvYZgE4Q9pNkUt5PsUtl3Halt4jq4ZbxIItZlj9ELcnDeP5gtW9X_HaZ-SuVLnAZ1y9ls364ZlorUV2Lw2XRWNmQsovvTKxcdpW1Natpaz1E-GzOfM-LtYgxyVAvwy_ZQNu5XqssucvUv_bJ9pAQdmiySbtg-VylgOVkhRUC6LJqg74FyKxBUZajJ-RdCJOEPxDZ3TFR4zzb8g0MODJJHHr9Lhf4zP9tG2bF1"/>
+                <span class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary font-bold text-xs px-3 py-1 rounded-full shadow-sm">Favorito del Valle</span>
+                <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
+                  <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 15 min
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+                <div class="flex flex-col gap-1">
+                  <div class="flex justify-between items-start gap-2">
+                    <h3 class="font-bold text-base text-primary">Gallo Pinto Especial Las Delicias</h3>
+                    <span class="font-bold text-lg text-primary-container whitespace-nowrap">₡5,200</span>
+                  </div>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Pinto tradicional arreglado con Salsa Lizano casera, dos huevos al gusto, salchichón criollo dorado, tajada de plátano maduro caramelizado y dos tortillas palmeadas con queso Turrialba tierno.
+                  </p>
+                </div>
+                <div class="pt-space-sm flex items-center justify-between gap-space-sm border-t border-outline-variant/20">
+                  <span class="text-xs text-on-surface-variant font-medium">Incluye café chorreado</span>
+                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50622369755?text=Hola,%20deseo%20ordenar%20el%20Gallo%20Pinto%20Especial%20Las%20Delicias%20(CRC%205,200)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">chat</span>
+                    <span>Pedir al WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Dish 2 -->
+            <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
+              <div class="relative h-52 w-full overflow-hidden bg-surface-container">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Desayuno Tico Campesino" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4qZND7YrOuxmnbBLU8v-YesYlAFDTg9FWjEjElRL8wU_76_7N09uTPzZhQANQgptchr-XDyTP6NhPcuYfBDfu8H329Y7qTfs6-0pZ-sqUIxPiAbuL0jopISdFpNFpOBx5m3xfJi-X-0WGSg1KgDI58HNzewQfaNluN9izxOZ7pDnnLGlU1IfOHt2m3wGZa0SlAjwIwSoBF73tlx-xCNZZrdZNkklBu06GReHVyXUY"/>
+                <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
+                  <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 12 min
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+                <div class="flex flex-col gap-1">
+                  <div class="flex justify-between items-start gap-2">
+                    <h3 class="font-bold text-base text-primary">Desayuno Tico Campesino</h3>
+                    <span class="font-bold text-lg text-primary-container whitespace-nowrap">₡5,000</span>
+                  </div>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Huevos revueltos con olores de la huerta (tomate y cebollino), frijoles molidos de la casa, porción de natilla artesanal, maduros fritos y dos tortillas palmeadas con queso frito crujiente.
+                  </p>
+                </div>
+                <div class="pt-space-sm flex items-center justify-between gap-space-sm border-t border-outline-variant/20">
+                  <span class="text-xs text-on-surface-variant font-medium">Opción natilla sin sal</span>
+                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50622369755?text=Hola,%20deseo%20ordenar%20el%20Desayuno%20Tico%20Campesino%20(CRC%205,000)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">chat</span>
+                    <span>Pedir al WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Dish 3 -->
+            <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
+              <div class="relative h-52 w-full overflow-hidden bg-surface-container">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Tortilla Aliñada" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBulIbpB5SF-lLgPTJQ-RjDEQL5CNd0BhgocRw8VJOnZN3xoYmzSrNXSndRDKNF_bhbLCT9JLqD4yLHuIMJjq6tJe-SxGCW8XyUnbg79rmC-XjP82u_3XxZgUpmkNb_lKT5lQND7983ZNSl8vAWJPiLx8GE0sHYsG7Y-6potutLSzxOnoLmagOoh-HhDwnuL5cazBjJljG4e5HT-t-vF_njjTsy6Rm2JBE9q1ZfoyEh"/>
+                <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
+                  <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 15 min
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+                <div class="flex flex-col gap-1">
+                  <div class="flex justify-between items-start gap-2">
+                    <h3 class="font-bold text-base text-primary">Tortilla Aliñada con Carne Mechada</h3>
+                    <span class="font-bold text-lg text-primary-container whitespace-nowrap">₡5,400</span>
+                  </div>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Gruesa masa de maíz blanco sazonada con queso y crema dulce al comal, coronada con tierna carne mechada en salsa criolla, natilla fresca de Zarcero y pico de gallo natural.
+                  </p>
+                </div>
+                <div class="pt-space-sm flex items-center justify-between gap-space-sm border-t border-outline-variant/20">
+                  <span class="text-xs text-on-surface-variant font-medium">Receta Guanacasteca</span>
+                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50622369755?text=Hola,%20deseo%20ordenar%20la%20Tortilla%20Aliñada%20con%20Carne%20Mechada%20(CRC%205,400)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">chat</span>
+                    <span>Pedir al WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- CATEGORY 2: Almuerzos Ejecutivos & Casados -->
+        <section class="menu-category-section flex flex-col gap-space-lg" data-category="casados">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-2 border-b border-outline-variant/20 pb-space-sm">
+            <div>
+              <span class="text-xs text-tertiary font-bold uppercase tracking-wider">El Rey del Mediodía Costarricense</span>
+              <h2 class="font-headline-md text-xl sm:text-2xl text-primary font-bold">Almuerzos Ejecutivos &amp; Casados</h2>
+            </div>
+            <p class="text-xs text-on-surface-variant max-w-md">
+              Servidos con arroz blanco grano entero, frijoles tiernos preparados al día, ensalada rusa tradicional con remolacha, plátano maduro en gloria y picadillo del día.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+            <!-- Casado 1 -->
+            <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
+              <div class="relative h-48 w-full overflow-hidden bg-surface-container">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Bistec Encebollado" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz9TzhmKUguMPz_5LD8BK81ST4rI4E87T1f8CV2ATFT03ZYGBuTScf_8XXMjkzuDwLjKNCq4G7Y7EfT9UPTwuwUvtWzpzTPfAPIFthXouDjR3B0UFYym83k-WhND6S9HjIox3ftLnmwSLV9Or58Uxb4RM2XvlS6MpSb2ciAdMRjZynataPB2oTOwuO01__pSFcy_kHObVQuMCacCSdDS6T5anzjBF9WPlsQV77u2Oh"/>
+                <span class="absolute top-3 left-3 bg-primary text-on-primary font-bold text-xs px-2.5 py-1 rounded-full shadow-sm">Clásico Nº 1</span>
+                <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
+                  <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 15-20 min
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+                <div class="flex flex-col gap-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="font-bold text-sm text-primary leading-tight">Casado Bistec Encebollado</h3>
+                    <span class="font-bold text-base text-primary-container whitespace-nowrap ml-2">₡6,200</span>
+                  </div>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Filete de res de primera suavizado en salsa de cebollas caramelizadas, servido con arroz, frijoles tiernos, ensalada rusa, maduro y picadillo casero.
+                  </p>
+                </div>
+                <div class="pt-space-xs flex flex-col gap-1 border-t border-outline-variant/20">
+                  <span class="text-xs text-tertiary font-semibold">Incluye refresco natural del día</span>
+                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50622369755?text=Hola,%20deseo%20ordenar%20el%20Casado%20con%20Bistec%20Encebollado%20(CRC%206,200)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">chat</span>
+                    <span>Pedir por WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Casado 2 -->
+            <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
+              <div class="relative h-48 w-full overflow-hidden bg-surface-container">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Filete de Pescado" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuMLE88och2IWireL7tWgRRRxB_LlirEq0WyUqicbIdAjPJ5JFKYNMswrI2QekQEu6pIQO0j8TPe--tYUA89DJPStLsuKNVHgus3B0hschqmD02YCrhhTti2elmPT8DgDa5x-o550tG-1R-vWa9fDKEq9f34pMvOUuufCrO-nVEfZJS_KnGdFq89Y1E27nNiS1U_ROW7Je3IpPR9EZJzZoe8E0wDeaH8mLv6qvPNCT"/>
+                <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
+                  <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 18 min
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+                <div class="flex flex-col gap-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="font-bold text-sm text-primary leading-tight">Casado Filete de Pescado</h3>
+                    <span class="font-bold text-base text-primary-container whitespace-nowrap ml-2">₡6,800</span>
+                  </div>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Filete de curvina o tilapia fresca sazonado al ajillo o a la plancha, arroz blanco, frijoles negros, ensalada verde campesina con aderezo y maduro frito.
+                  </p>
+                </div>
+                <div class="pt-space-xs flex flex-col gap-1 border-t border-outline-variant/20">
+                  <span class="text-xs text-tertiary font-semibold">Al ajillo o a la plancha</span>
+                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50622369755?text=Hola,%20deseo%20ordenar%20el%20Casado%20con%20Filete%20de%20Pescado%20(CRC%206,800)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">chat</span>
+                    <span>Pedir por WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Casado 3 -->
+            <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
+              <div class="relative h-48 w-full overflow-hidden bg-surface-container">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Chuleta Ahumada" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiZ_ydUsIUKX1U4Z1ZYDqnxZHF-0JbXPGQwfQ3lBLwdEycQyLBYoST-oOR6ED8ZICE_xZHmtd_M7HccY5-rK7FUnUt3QuL8OH_P-8dG5sCN7FT2r185EIV4L9s3lCMt4zzlZq4wiPCTXrTbbbf3199zI4Aya2sr4uwbLx76b_-RHiNL-JQ32IjFFWMwJfj6ZnhfkmHGqlMR80u7J02bEJoQO1eXvEVZUFVLxPFhw2V"/>
+                <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
+                  <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 15 min
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+                <div class="flex flex-col gap-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="font-bold text-sm text-primary leading-tight">Casado Chuleta Ahumada</h3>
+                    <span class="font-bold text-base text-primary-container whitespace-nowrap ml-2">₡6,400</span>
+                  </div>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Jugosa chuleta de cerdo ahumada al carbón de café, bañada en suave glaseado de piña o natural, con arroz, frijoles, ensalada rusa y picadillo casero.
+                  </p>
+                </div>
+                <div class="pt-space-xs flex flex-col gap-1 border-t border-outline-variant/20">
+                  <span class="text-xs text-tertiary font-semibold">Ahumado artesanal casero</span>
+                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50622369755?text=Hola,%20deseo%20ordenar%20el%20Casado%20con%20Chuleta%20Ahumada%20(CRC%206,400)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">chat</span>
+                    <span>Pedir por WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Casado 4 -->
+            <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
+              <div class="relative h-48 w-full overflow-hidden bg-surface-container">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Casado Vegetariano" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB37-eK3A7l7NDQBIrJu1hf4Y8W214QnhJLBzWi4gd1P9pqmXUxQs0NyPKnU-no1k1PnKdoo3ddemvc3-3AP7REneDm_6046A6IUPkjrX2_mnzvGFM2ieWJA1PiAfrFvUQ-gkcuYKo-6plfsRgerzOk1w4vSdvpB4nejwZ1ThPHyD5XCVzyvUm7uUEajcYq0XI2kanRdZsp-UulQQ0FUiLJa7fSvCygTQTF1nQF7HHB"/>
+                <span class="absolute top-3 left-3 bg-surface-container-high text-on-surface font-bold text-xs px-2.5 py-1 rounded-full shadow-sm">Vegetariano</span>
+                <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
+                  <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 12 min
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+                <div class="flex flex-col gap-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="font-bold text-sm text-primary leading-tight">Casado Vegetariano</h3>
+                    <span class="font-bold text-base text-primary-container whitespace-nowrap ml-2">₡5,500</span>
+                  </div>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Queso Turrialba a la plancha, huevo al gusto, doble porción de picadillo criollo del día, aguacate hass maduro, arroz blanco, frijoles tiernos y plátano maduro.
+                  </p>
+                </div>
+                <div class="pt-space-xs flex flex-col gap-1 border-t border-outline-variant/20">
+                  <span class="text-xs text-emerald-700 font-semibold">100% libre de carnes</span>
+                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50622369755?text=Hola,%20deseo%20ordenar%20el%20Casado%20Vegetariano%20(CRC%205,500)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">chat</span>
+                    <span>Pedir por WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- HIGHLIGHT BANNER: Olla de Carne de la Abuela -->
+        <section class="menu-category-section w-full bg-primary text-on-primary rounded-2xl p-space-lg md:p-space-xl relative overflow-hidden shadow-2xl border border-white/10" data-category="especialidades">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center relative z-10">
+            <div class="lg:col-span-7 flex flex-col gap-space-sm">
+              <div class="inline-flex items-center gap-space-xs bg-primary-container text-on-primary px-3 py-1 rounded-full w-fit">
+                <span class="material-symbols-outlined text-[18px] text-tertiary-fixed">star</span>
+                <span class="text-xs uppercase font-bold tracking-wider">Plato Emblema • Sabor Criollo</span>
+              </div>
+              <h2 class="font-headline-lg text-2xl sm:text-3xl lg:text-4xl leading-tight font-bold">
+                Olla de Carne Tradicional de la Abuela
+              </h2>
+              <p class="text-sm sm:text-base text-inverse-on-surface/90 leading-relaxed">
+                Nuestra célebre cazuela de caldo concentrado hervido durante 6 horas con costilla de res, jarrete suave, yuca mantequilla, elote tierno, plátano verde, camote, chayote y culantro coyote fresco.
+              </p>
+              <div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+                <div class="flex flex-col">
+                  <span class="text-xs uppercase opacity-80 font-semibold">Porción Completa</span>
+                  <span class="font-bold text-3xl text-tertiary-fixed">₡7,500</span>
+                </div>
+                <div class="flex flex-col border-l border-white/20 pl-space-md">
+                  <span class="text-xs uppercase opacity-80 font-semibold">Acompañamiento Incluido</span>
+                  <span class="font-bold text-sm sm:text-base">Tazón de arroz blanco, maduro y tortillas</span>
+                </div>
+              </div>
+              <div class="pt-space-sm flex items-center gap-space-sm">
+                <a class="inline-flex items-center gap-space-xs px-6 py-3 rounded-xl bg-on-tertiary-container text-on-tertiary-fixed font-bold text-sm shadow-lg hover:brightness-105 transition-all" href="https://wa.me/50622369755?text=Hola,%20deseo%20ordenar%20la%20Olla%20de%20Carne%20Tradicional%20(CRC%207,500)" rel="noopener noreferrer" target="_blank">
+                  <span class="material-symbols-outlined text-[20px]">restaurant</span>
+                  <span>Pedir Olla de Carne por WhatsApp</span>
+                </a>
+              </div>
+            </div>
+            <div class="lg:col-span-5 relative">
+              <div class="aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl bg-surface-container border-2 border-white/20">
+                <img class="w-full h-full object-cover" alt="Olla de Carne Tradicional" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlmrKpUZNlnsuzR-qHZf2-RkVfKloUOQLgBfkyE_rSgGHrSe0xxKdOL2JS4cayK1s7aCRTUhEJFXGpL0_lVtspgCfp_TX4Ov0lWqjGD_wp_0vZYhPbhPEkV-2bv0qqFgfHyPfju820Wlaxi__LbwOIZQJyq-9cQUt9qlFs3FEMYPYaTvlOoMRLG3lfX1rJqO3GaO7rzKX85hC3dc1j2qwTneIzYYIBZTWEFPS2lGRj"/>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CATEGORY 3: Especialidades de la Casa, Carnes & Antojos -->
+        <section class="menu-category-section flex flex-col gap-space-lg" data-category="especialidades">
+          <div class="border-b border-outline-variant/20 pb-space-sm">
+            <span class="text-xs text-tertiary font-bold uppercase tracking-wider">Favoritos de Nuestra Cocina</span>
+            <h2 class="font-headline-md text-xl sm:text-2xl text-primary font-bold">Especialidades, Carnes &amp; Antojos</h2>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+            <!-- Dish: Chifrijo Abundante -->
+            <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
+              <div class="relative h-52 w-full overflow-hidden bg-surface-container">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Chifrijo Abundante" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZcIBoBMuVwZVZIA-MC_P5cPa_9Ickf8l4hXSvCnoH9Bq2h9BzDC8vy2HImSPiHGZGH3VAVddhRMWYhen2yhHgewpKJJWe4T0nh0BAZIRLTEkrZQCfJktn7F42YvXyAz2rpWRP1P-LIv3DT58MV2yAk2SRHTAeKSeMSHmVD9hGXoSUlw_DSosC9_GwZiiGnFBhEDpWmsDfsma22LOKA1OcAZ_c214dUAmfgKOoOjn9"/>
+                <span class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary font-bold text-xs px-3 py-1 rounded-full shadow-sm">El Más Pedido</span>
+                <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
+                  <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 12 min
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+                <div class="flex flex-col gap-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="font-bold text-base text-primary">Chifrijo Abundante Las Delicias</h3>
+                    <span class="font-bold text-lg text-primary-container whitespace-nowrap">₡6,500</span>
+                  </div>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Tazón hondo con frijoles tiernos en su caldo, arroz blanco, chicharrón de cerdo frito 100% crujiente de posta y concha, pico de gallo criollo, aguacate hass y totopos de maíz.
+                  </p>
+                </div>
+                <div class="pt-space-sm flex items-center justify-between gap-space-sm border-t border-outline-variant/20">
+                  <span class="text-xs text-on-surface-variant font-medium">Con chimichurri casero</span>
+                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50622369755?text=Hola,%20deseo%20ordenar%20el%20Chifrijo%20Abundante%20(CRC%206,500)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">chat</span>
+                    <span>Pedir al WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Dish: Arroz con Pollo Criollo -->
+            <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
+              <div class="relative h-52 w-full overflow-hidden bg-surface-container">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Arroz con Pollo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhRQ7fbqzGlT2OufpmontURcmOcwp-AT8DrF6oTm8RLFjM-5X9S4oPgf3wxy3aBjZ1Rs7HkodHFr_LsE82KQav-6DK8ZZ8YsouWP3ytN4WAnoF5WcltaP4xVqFkoLCpBWl7sAIn55sRaAxfy7APPgOwoLQUjsxwcgCcOvewur7ODGglGgeQzz0Se0nTxJPslMapWnXOj92-Y8LxcN7vxmHDDSJsMyXVESaSUO1jyng"/>
+                <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
+                  <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 15 min
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+                <div class="flex flex-col gap-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="font-bold text-base text-primary">Arroz con Pollo Criollo Fiestero</h3>
+                    <span class="font-bold text-lg text-primary-container whitespace-nowrap">₡5,800</span>
+                  </div>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    El clásico de fiesta tica: arroz amarillo sazonado con achiote natural, abundante pechuga desmenuzada, petit pois y zanahoria. Acompañado de papas fritas y ensalada rusa.
+                  </p>
+                </div>
+                <div class="pt-space-sm flex items-center justify-between gap-space-sm border-t border-outline-variant/20">
+                  <span class="text-xs text-on-surface-variant font-medium">Salsa Lizano a la mesa</span>
+                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50622369755?text=Hola,%20deseo%20ordenar%20el%20Arroz%20con%20Pollo%20Criollo%20(CRC%205,800)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">chat</span>
+                    <span>Pedir al WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Dish: Fajitas Mixtas al Sartén -->
+            <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
+              <div class="relative h-52 w-full overflow-hidden bg-surface-container">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Fajitas Mixtas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlPWXrFQv9XX1s0iADhTaeBqPpFJ131unAhYrTJfTRiJEwGuiQsAnNBvnfxQPHE057j2-q36zKYzD8cLq9MhBkcuVLXXAVm6vLizoflVkGTkllik9PfjHGyEHORE5hzCb2KEcaD5tbfaYzws14uLBUZ9yFlG_aD092PY7wVBOhNIGg3SLkVyPqTLHAg0sRpbZoP7GazMjnzDHdeHdLgZ1enzSu4YHjBLP4jTlAY-D0"/>
+                <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
+                  <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 20 min
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+                <div class="flex flex-col gap-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="font-bold text-base text-primary">Fajitas Mixtas al Sartén</h3>
+                    <span class="font-bold text-lg text-primary-container whitespace-nowrap">₡8,500</span>
+                  </div>
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Tiras de lomo de res y pechuga marinadas con especias típicas, salteadas al comal con chiles dulces y cebolla. Incluye frijoles molidos, queso frito y 4 tortillas palmeadas.
+                  </p>
+                </div>
+                <div class="pt-space-sm flex items-center justify-between gap-space-sm border-t border-outline-variant/20">
+                  <span class="text-xs text-on-surface-variant font-medium">Ideal para compartir</span>
+                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50622369755?text=Hola,%20deseo%20ordenar%20las%20Fajitas%20Mixtas%20(CRC%208,500)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">chat</span>
+                    <span>Pedir al WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- CATEGORY 4: Bebidas Naturales & Postres Típicos -->
+        <section class="menu-category-section flex flex-col gap-space-lg" data-category="bebidas-postres">
+          <div class="border-b border-outline-variant/20 pb-space-sm">
+            <span class="text-xs text-tertiary font-bold uppercase tracking-wider">El Dulce Final &amp; Frescura Tropical</span>
+            <h2 class="font-headline-md text-xl sm:text-2xl text-primary font-bold">Bebidas Naturales, Café &amp; Postres Típicos</h2>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+            <!-- Drinks Column -->
+            <div class="lg:col-span-5 flex flex-col gap-space-md bg-surface-container-low rounded-2xl p-space-lg shadow-sm border border-outline-variant/20">
+              <div class="flex items-center gap-space-xs">
+                <span class="material-symbols-outlined text-primary text-[24px]">local_cafe</span>
+                <h3 class="font-headline-sm text-lg font-bold text-primary">Bebidas Naturales &amp; Café</h3>
+              </div>
+              <p class="text-xs text-on-surface-variant leading-relaxed">
+                Pulpas 100% fruta natural sin preservantes. Preparadas al momento en agua o leche.
+              </p>
+              
+              <div class="flex flex-col gap-space-xs mt-space-xs">
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-lowest shadow-xs border border-outline-variant/20">
+                  <div class="flex items-center gap-space-sm">
+                    <span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary font-bold text-xs">1</span>
+                    <div class="flex flex-col">
+                      <span class="font-bold text-xs sm:text-sm text-on-surface">Fresco Natural de Guanábana</span>
+                      <span class="text-xs text-on-surface-variant">En agua o en leche cremosa</span>
+                    </div>
+                  </div>
+                  <span class="font-bold text-sm text-primary">₡2,200</span>
+                </div>
+
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-lowest shadow-xs border border-outline-variant/20">
+                  <div class="flex items-center gap-space-sm">
+                    <span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary font-bold text-xs">2</span>
+                    <div class="flex flex-col">
+                      <span class="font-bold text-xs sm:text-sm text-on-surface">Fresco Natural de Cas</span>
+                      <span class="text-xs text-on-surface-variant">Típico tico, punto ácido perfecto</span>
+                    </div>
+                  </div>
+                  <span class="font-bold text-sm text-primary">₡2,000</span>
+                </div>
+
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-lowest shadow-xs border border-outline-variant/20">
+                  <div class="flex items-center gap-space-sm">
+                    <span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary font-bold text-xs">3</span>
+                    <div class="flex flex-col">
+                      <span class="font-bold text-xs sm:text-sm text-on-surface">Maracuyá o Frutas Mixtas</span>
+                      <span class="text-xs text-on-surface-variant">Fruta de la pasión de temporada</span>
+                    </div>
+                  </div>
+                  <span class="font-bold text-sm text-primary">₡2,000</span>
+                </div>
+
+                <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-lowest shadow-xs border border-outline-variant/20">
+                  <div class="flex items-center gap-space-sm">
+                    <span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary font-bold text-xs">☕</span>
+                    <div class="flex flex-col">
+                      <span class="font-bold text-xs sm:text-sm text-on-surface">Café Chorreado de Altura</span>
+                      <span class="text-xs text-on-surface-variant">Grano de Tarrazú en chorreador</span>
+                    </div>
+                  </div>
+                  <span class="font-bold text-sm text-primary">₡1,800</span>
+                </div>
+              </div>
+
+              <a class="mt-2 inline-flex items-center justify-center gap-space-xs px-4 py-2.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50622369755?text=Hola,%20deseo%20ordenar%20bebidas%20naturales%20o%20café%20chorreado" rel="noopener noreferrer" target="_blank">
+                <span class="material-symbols-outlined text-[18px]">chat</span>
+                <span>Pedir Bebidas por WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- Desserts Column -->
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+              <!-- Postre 1 -->
+              <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
+                <div class="relative h-44 w-full overflow-hidden bg-surface-container">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Chancletas Caseras" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBff9o8tKG9oxbKz_kNoa69_8lmK63puEplDi6YIPrPKD3Tw_thohpyHzZACnMldBUBUH_R0prHvtp8P9pRvovB8yD0VHyAMCp7mVzrS_T6JjJcFkAJ5Dfju7FNLYpXF3RIfS5vZ4fJ2mERdtyrTgjLyquC63KNZq_ty4Sxfhpeggf1R2NIyVjqfQd1fMd6k9x2VCKLyGzZuKvMTlqC4FXp79agQpyizGXCHL2Sqjdp"/>
+                  <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
+                    <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 10 min
+                  </div>
+                </div>
+                <div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+                  <div class="flex flex-col gap-1">
+                    <div class="flex justify-between items-start">
+                      <h4 class="font-bold text-sm text-primary">Chancletas Caseras</h4>
+                      <span class="font-bold text-base text-primary-container">₡2,800</span>
+                    </div>
+                    <p class="text-xs text-on-surface-variant leading-relaxed">
+                      Receta colonial: cáscara de chayote rellena con puré dulce, canela en rama, pasas maceradas y queso tierno gratinado al horno.
+                    </p>
+                  </div>
+                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://wa.me/50622369755?text=Hola,%20deseo%20ordenar%20Chancletas%20Caseras%20(CRC%202,800)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px] text-tertiary-container">chat</span>
+                    <span>Pedir Chancletas</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Postre 2 -->
+              <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
+                <div class="relative h-44 w-full overflow-hidden bg-surface-container">
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Arroz con Leche" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAhExfLvxxNyH9DdjfZ8SiNYPCDNDQKsO7bSCsRR6LsJdKOP0DtjKeKj-CRM1w_Yn_brP-ntDCM0nKR2cZjXnSXrLBDT-vrEpPPgF7GPmTDPzd7y6XmeMm996U6Pu8_hyeP9DLHvY4dA3cZNrCgGic8Y55gqwcC5ZQMfJZ66_QtBViOJXFUfkMYvsixPykkQcPUHGCEdto-NEpZMHCfs6A4Tymqdtn7PonpL_E2V7b"/>
+                  <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
+                    <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> Listo
+                  </div>
+                </div>
+                <div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+                  <div class="flex flex-col gap-1">
+                    <div class="flex justify-between items-start">
+                      <h4 class="font-bold text-sm text-primary">Arroz con Leche Cremoso</h4>
+                      <span class="font-bold text-base text-primary-container">₡2,500</span>
+                    </div>
+                    <p class="text-xs text-on-surface-variant leading-relaxed">
+                      Cocinado a fuego lento con tres leches, cáscara de limón agrio, clavo de olor, pasas y abundante canela molida espolvoreada.
+                    </p>
+                  </div>
+                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://wa.me/50622369755?text=Hola,%20deseo%20ordenar%20el%20Arroz%20con%20Leche%20(CRC%202,500)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px] text-tertiary-container">chat</span>
+                    <span>Pedir Arroz con Leche</span>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- CULINARY TRUST GUARANTEE BOX -->
+        <section class="w-full bg-surface-container-lowest rounded-2xl p-space-lg md:p-space-xl shadow-xs border border-outline-variant/20">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg items-center">
+            <div class="flex items-center gap-space-md">
+              <div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+                <span class="material-symbols-outlined text-[28px]">verified</span>
+              </div>
+              <div class="flex flex-col">
+                <h4 class="font-bold text-sm sm:text-base text-primary">Precios Oficiales y Transparentes</h4>
+                <p class="text-xs text-on-surface-variant">Todos los precios se indican en colones (₡ CRC) e incluyen 13% IVA y 10% servicio.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-space-md">
+              <div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-tertiary-container shrink-0">
+                <span class="material-symbols-outlined text-[28px]">bakery_dining</span>
+              </div>
+              <div class="flex flex-col">
+                <h4 class="font-bold text-sm sm:text-base text-primary">Tortillas 100% Palmeadas</h4>
+                <p class="text-xs text-on-surface-variant">Masa fresca de maíz cocido y molido a diario, palmeadas en comal tradicional caliente.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-space-md">
+              <div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+                <span class="material-symbols-outlined text-[28px]">delivery_dining</span>
+              </div>
+              <div class="flex flex-col">
+                <h4 class="font-bold text-sm sm:text-base text-primary">Para Llevar o Express</h4>
+                <p class="text-xs text-on-surface-variant">Envíos express en San Juan de Tibás, Cinco Esquinas, Colima, Moravia y alrededores.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FLOATING WHATSAPP ACTION BUTTON -->
+  <aside class="fixed bottom-space-lg right-space-lg z-40 flex flex-col items-end gap-space-xs">
+    <a aria-label="WhatsApp Restaurante Las Delicias" class="group flex items-center gap-space-sm pl-space-md pr-space-sm py-space-sm rounded-full bg-tertiary-container text-on-tertiary shadow-[0_8px_20px_-3px_rgba(78,42,28,0.25)] hover:bg-tertiary transition-all duration-300 transform hover:-translate-y-0.5" href="https://wa.me/50622369755?text=Hola%20Restaurante%20Las%20Delicias,%20deseo%20hacer%20un%20pedido%20del%20menú" rel="noopener noreferrer" target="_blank">
+      <span class="hidden md:inline font-bold text-xs text-on-tertiary">¡Pedí por WhatsApp!</span>
+      <div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-tertiary-container shadow-inner">
+        <span class="material-symbols-outlined text-[24px]">chat</span>
+      </div>
+    </a>
+  </aside>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-surface-container-low text-on-surface shadow-[0_-1px_8px_rgba(78,42,28,0.03)] border-t border-outline-variant/20">
+    <div class="max-w-[1280px] mx-auto px-gutter py-space-xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl">
+        <div class="flex flex-col gap-space-sm">
+          <div class="flex items-center gap-space-sm">
+            <img alt="Restaurante Las Delicias Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX"/>
+            <span class="font-headline-sm text-lg font-bold text-primary">Las Delicias</span>
+          </div>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Auténtica gastronomía costarricense con más de 30 años llevando a su mesa el sazón casero, tortillas palmeadas y el calor de hogar en el corazón de Tibás.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <h3 class="font-bold text-base text-primary">Ubicación &amp; Llegada</h3>
+          <div class="flex items-start gap-space-xs text-on-surface-variant text-xs leading-relaxed">
+            <span class="material-symbols-outlined text-[20px] text-tertiary-container shrink-0 mt-0.5">location_on</span>
+            <span>Donde La Chinita, 25 metros sur del Restaurante Los Antojitos, diagonal sur, San Juan de Tibás, San José, Costa Rica</span>
+          </div>
+          <div class="flex flex-wrap gap-space-xs mt-space-xs">
+            <a class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://maps.google.com/?q=Restaurante+Las+Delicias+Tibas" target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined text-[16px] text-primary">map</span>
+              <span>Google Maps</span>
+            </a>
+            <a class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://waze.com/ul?q=Restaurante+Las+Delicias+Tibas" target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined text-[16px] text-tertiary">navigation</span>
+              <span>Waze</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <h3 class="font-bold text-base text-primary">Horario de Atención</h3>
+          <ul class="flex flex-col gap-space-xs text-xs text-on-surface-variant">
+            <li class="flex justify-between items-center py-0.5">
+              <span class="font-semibold text-on-surface">Lunes a Sábado:</span>
+              <span>7:00 AM – 7:00 PM</span>
+            </li>
+            <li class="flex justify-between items-center py-0.5">
+              <span class="font-semibold text-on-surface">Domingos:</span>
+              <span>6:00 AM – 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <h3 class="font-bold text-base text-primary">Enlaces Rápidos</h3>
+          <nav class="flex flex-col gap-1.5 text-xs text-on-surface-variant">
+            <a class="hover:text-primary transition-colors font-semibold" href="index.html">Inicio</a>
+            <a class="hover:text-primary transition-colors font-bold text-primary" href="menu.html">Menú Típico Completo</a>
+            <a class="hover:text-primary transition-colors font-semibold" href="buscador.html">Buscador &amp; Plato del Día</a>
+            <a class="hover:text-primary transition-colors font-semibold" href="reservas.html">Reservas de Mesa</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="pt-space-lg border-t border-outline-variant/20 flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant text-xs">
+        <p>© 2025 Restaurante Las Delicias. Todos los derechos reservados. San Juan de Tibás, Costa Rica.</p>
+        <p>Precios con 13% IVA y 10% servicio incluidos.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT: FILTER MENU & MOBILE DRAWER -->
+  <script>
+    function filterMenu(category, btn) {
+      const tabs = document.querySelectorAll('.category-btn');
+      tabs.forEach(tab => {
+        tab.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        tab.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+
+      const sections = document.querySelectorAll('.menu-category-section');
+      sections.forEach(section => {
+        const sectionCat = section.getAttribute('data-category');
+        if (category === 'all' || sectionCat === category) {
+          section.style.display = 'flex';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    }
+
+    // Mobile Drawer Logic
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const mobileDrawerBackdrop = document.getElementById('mobileDrawerBackdrop');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileDrawerBackdrop.classList.remove('opacity-0', 'pointer-events-none');
+      mobileDrawerBackdrop.classList.add('opacity-100', 'pointer-events-auto');
+      mobileDrawer.classList.remove('translate-x-full');
+      mobileDrawer.classList.add('translate-x-0');
+      document.body.style.overflow = 'hidden';
+    });
+
+    function closeDrawer() {
+      mobileDrawerBackdrop.classList.add('opacity-0', 'pointer-events-none');
+      mobileDrawerBackdrop.classList.remove('opacity-100', 'pointer-events-auto');
+      mobileDrawer.classList.add('translate-x-full');
+      mobileDrawer.classList.remove('translate-x-0');
+      document.body.style.overflow = '';
+    }
+
+    closeDrawerBtn.addEventListener('click', closeDrawer);
+    mobileDrawerBackdrop.addEventListener('click', closeDrawer);
+  </script>
+</body>
+</html>

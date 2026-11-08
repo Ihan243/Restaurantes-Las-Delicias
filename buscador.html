@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="web_standard" name="shell-type"/>
+  <title>Buscador &amp; Especiales del Día | Restaurante Las Delicias Tibás</title>
+  <meta name="description" content="Encontrá tu platillo tradicional tico favorito en Restaurante Las Delicias. Filtros por ingredientes, dietas (vegetariano, sin gluten), precio y especiales de hoy con pedido express por WhatsApp."/>
+  
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .material-symbols-fill {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "background": "#f8f9ff",
+            "surface": "#f8f9ff",
+            "surface-dim": "#d0dbed",
+            "surface-bright": "#f8f9ff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#eff4ff",
+            "surface-container": "#e6eeff",
+            "surface-container-high": "#dee9fc",
+            "surface-container-highest": "#d9e3f6",
+            "on-surface": "#121c2a",
+            "on-surface-variant": "#564244",
+            "inverse-surface": "#27313f",
+            "inverse-on-surface": "#eaf1ff",
+            "outline": "#897174",
+            "outline-variant": "#dcc0c2",
+            "surface-tint": "#a3394f",
+            "primary": "#6c0c28",
+            "on-primary": "#ffffff",
+            "primary-container": "#8b263e",
+            "on-primary-container": "#ffa3b0",
+            "inverse-primary": "#ffb2bc",
+            "secondary": "#5f5e5a",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#e5e2dc",
+            "on-secondary-container": "#656460",
+            "tertiary": "#4d2f00",
+            "on-tertiary": "#ffffff",
+            "tertiary-container": "#6c4300",
+            "on-tertiary-container": "#ffab31",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "primary-fixed": "#ffd9dd",
+            "primary-fixed-dim": "#ffb2bc",
+            "on-primary-fixed": "#400013",
+            "on-primary-fixed-variant": "#842039",
+            "secondary-fixed": "#e5e2dc",
+            "secondary-fixed-dim": "#c9c6c1",
+            "on-secondary-fixed": "#1c1c18",
+            "on-secondary-fixed-variant": "#474743",
+            "tertiary-fixed": "#ffddb8",
+            "tertiary-fixed-dim": "#ffb95f",
+            "on-tertiary-fixed": "#2a1700",
+            "on-tertiary-fixed-variant": "#653e00",
+            "surface-variant": "#d9e3f6"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "sm": "0.25rem",
+            "md": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "2xl": "1.5rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "gutter": "1.25rem",
+            "gutter-desktop": "2rem",
+            "margin": "1rem",
+            "margin-tablet": "2rem",
+            "margin-desktop": "3rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem"
+          },
+          fontFamily: {
+            "display-hero": ["Playfair Display", "serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "headline-md": ["Playfair Display", "serif"],
+            "headline-sm": ["Playfair Display", "serif"],
+            "title-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "title-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+  <!-- TOP MAIN NAVBAR -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(78,42,28,0.06)]" id="mainHeader">
+    <div class="h-20 max-w-[1280px] mx-auto px-gutter flex items-center justify-between gap-space-md">
+      <!-- Logo & Branding -->
+      <div class="flex items-center gap-space-md shrink-0">
+        <a class="flex items-center gap-space-sm group" href="index.html">
+          <img alt="Restaurante Las Delicias Logo" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX"/>
+          <div class="flex flex-col">
+            <span class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors font-bold tracking-tight">Las Delicias</span>
+            <span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider hidden sm:block">Sabor Típico • Tibás</span>
+          </div>
+        </a>
+        <div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface">
+          <span class="font-label-sm text-label-sm font-bold text-tertiary-container">★ 4.2</span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">(1,200+ reseñas)</span>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-1 xl:gap-space-xs">
+        <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="index.html">Inicio</a>
+        <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="index.html#nuestra-historia">Nuestra Historia</a>
+        <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="menu.html">Menú Típico</a>
+        <a aria-current="page" class="transition-all bg-primary-container text-on-primary font-bold rounded-lg px-3 py-1.5 shadow-sm text-sm" href="buscador.html">Buscador &amp; Especiales</a>
+        <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="index.html#galeria">Galería</a>
+        <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="index.html#opiniones">Opiniones</a>
+        <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" href="reservas.html">Reservas &amp; Contacto</a>
+      </nav>
+
+      <!-- Right Action Triggers -->
+      <div class="flex items-center gap-space-sm shrink-0">
+        <div class="hidden sm:flex items-center rounded-full bg-surface-container p-1 text-xs">
+          <button class="px-2.5 py-1 rounded-full font-bold bg-primary text-on-primary shadow-xs transition-colors" type="button" title="Español">ES</button>
+          <button class="px-2.5 py-1 rounded-full font-semibold text-on-surface-variant hover:text-on-surface transition-colors" type="button" onclick="alert('English version is coming soon! Our staff is bilingual and welcomes you warmly.')" title="Switch to English">EN</button>
+        </div>
+
+        <a class="hidden 2xl:flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors shadow-xs" href="tel:+50622369755">
+          <span class="material-symbols-outlined text-[18px] text-primary">call</span>
+          <span>+506 2236 9755</span>
+        </a>
+
+        <a class="hidden sm:inline-flex items-center gap-space-xs px-4 py-2 rounded-lg bg-primary text-on-primary font-semibold text-sm hover:bg-primary-container hover:text-on-primary transition-all shadow-[0_2px_6px_-1px_rgba(78,42,28,0.2)]" href="reservas.html">
+          <span class="material-symbols-outlined text-[18px]">restaurant</span>
+          <span>Pedir / Reservar</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="lg:hidden p-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-primary" id="mobileMenuBtn" aria-label="Abrir Menú de Navegación">
+          <span class="material-symbols-outlined text-[26px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE-OVER NAVIGATION DRAWER -->
+  <div class="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden" id="mobileDrawerBackdrop"></div>
+  <aside class="fixed top-0 right-0 bottom-0 z-50 w-80 max-w-[85vw] bg-surface shadow-2xl transform translate-x-full transition-transform duration-300 ease-out flex flex-col justify-between p-space-lg lg:hidden" id="mobileDrawer">
+    <div class="flex flex-col gap-space-md">
+      <div class="flex items-center justify-between pb-space-sm border-b border-outline-variant/30">
+        <div class="flex items-center gap-space-xs">
+          <img alt="Logo" class="h-7 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX"/>
+          <span class="font-headline-sm text-title-lg font-bold text-primary">Las Delicias</span>
+        </div>
+        <button class="p-1 rounded-lg text-on-surface-variant hover:text-primary transition-colors" id="closeDrawerBtn" aria-label="Cerrar Menú">
+          <span class="material-symbols-outlined text-[24px]">close</span>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-1.5 pt-space-xs">
+        <a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-semibold text-sm transition-colors" href="index.html">
+          <span class="material-symbols-outlined text-[20px]">home</span>
+          <span>Inicio</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-semibold text-sm transition-colors" href="menu.html">
+          <span class="material-symbols-outlined text-[20px]">restaurant_menu</span>
+          <span>Menú Típico</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-bold text-sm" href="buscador.html">
+          <span class="material-symbols-outlined text-[20px]">search</span>
+          <span>Buscador &amp; Especiales</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-semibold text-sm transition-colors" href="index.html#nuestra-historia">
+          <span class="material-symbols-outlined text-[20px]">menu_book</span>
+          <span>Nuestra Historia</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-semibold text-sm transition-colors" href="index.html#galeria">
+          <span class="material-symbols-outlined text-[20px]">photo_library</span>
+          <span>Galería Típica</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-semibold text-sm transition-colors" href="index.html#opiniones">
+          <span class="material-symbols-outlined text-[20px]">reviews</span>
+          <span>Opiniones</span>
+        </a>
+        <a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-semibold text-sm transition-colors" href="reservas.html">
+          <span class="material-symbols-outlined text-[20px]">table_bar</span>
+          <span>Reservas &amp; Contacto</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="flex flex-col gap-space-sm pt-space-md border-t border-outline-variant/30">
+      <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-lg bg-tertiary-container text-on-tertiary font-bold text-sm shadow-sm" href="https://wa.me/50622369755?text=Hola%20Restaurante%20Las%20Delicias,%20deseo%20hacer%20un%20pedido%20o%20reserva" target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined text-[18px]">chat</span>
+        <span>WhatsApp Directo</span>
+      </a>
+      <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-lg bg-surface-container text-on-surface font-semibold text-sm hover:bg-surface-container-high transition-colors" href="tel:+50622369755">
+        <span class="material-symbols-outlined text-[18px] text-primary">call</span>
+        <span>Llamar: +506 2236 9755</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN SEARCH VIEWPORT -->
+  <main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
+    <div class="flex flex-col w-full">
+
+      <!-- Subtle Ambient Glow -->
+      <div class="relative w-full max-w-[1280px] mx-auto px-gutter py-space-lg">
+        <div class="absolute top-12 left-1/4 w-96 h-96 bg-primary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+        <div class="absolute top-48 right-10 w-80 h-80 bg-tertiary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+        <!-- Header & Live Operational Status Banner -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+          <div class="flex flex-col max-w-2xl">
+            <div class="flex items-center gap-space-xs text-primary font-bold text-xs uppercase tracking-wider mb-1">
+              <span class="material-symbols-outlined text-[18px]">skillet</span>
+              <span>Cocina Auténtica Tibaseña • 100% Leña y Barro</span>
+            </div>
+            <h1 class="font-headline-lg text-3xl sm:text-4xl text-primary font-bold leading-tight">
+              Buscador de Platillos &amp; Sugerencias
+            </h1>
+            <p class="text-sm sm:text-base text-on-surface-variant mt-1 leading-relaxed">
+              Explore nuestras recetas familiares con ingredientes frescos de la feria del agricultor, opciones tradicionales y preparaciones adaptadas a su gusto.
+            </p>
+          </div>
+
+          <!-- Real-time Tibás Kitchen Availability Module -->
+          <div class="bg-surface-container-lowest shadow-sm rounded-2xl p-space-md flex items-center gap-space-md shrink-0 border border-outline-variant/20">
+            <div class="relative flex items-center justify-center">
+              <span class="animate-ping absolute inline-flex h-4 w-4 rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-600"></span>
+            </div>
+            <div class="flex flex-col">
+              <div class="flex items-center gap-space-xs">
+                <span class="text-xs sm:text-sm font-bold text-on-surface">Cocina Abierta en Tibás</span>
+                <span class="px-2 py-0.5 rounded bg-surface-container text-tertiary font-bold text-xs">Hoy</span>
+              </div>
+              <span class="text-xs text-on-surface-variant">Disponible para mesa y entrega express inmediata</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chef's Daily Highlight Card (Sugerencia del Día) -->
+        <section class="mb-space-xl bg-surface-container-low rounded-2xl shadow-sm overflow-hidden relative group border border-outline-variant/20">
+          <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+            <div class="lg:col-span-7 p-space-lg lg:p-space-xl flex flex-col justify-between z-10">
+              <div>
+                <div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-tertiary text-on-tertiary font-bold text-xs mb-space-sm shadow-xs">
+                  <span class="material-symbols-outlined text-[16px] text-tertiary-fixed">hotel_class</span>
+                  <span>SUGERENCIA DE HOY • RECETA DE LA ABUELA</span>
+                </div>
+                <h2 class="font-headline-lg text-2xl sm:text-3xl text-primary mb-1 font-bold">
+                  Olla de Carne Criolla en Cazuela
+                </h2>
+                <p class="text-xs sm:text-sm text-on-surface-variant mb-space-md leading-relaxed">
+                  Hervida a fuego lento durante 6 horas en cazuela de barro tradicional. Cortes selectos de costilla suave y cecina acompañados de yuca mantequilla, camote tierno, elote dulce, plátano verde, chayote y zanahoria de la huerta, perfumada con culantro coyote.
+                </p>
+                <div class="flex flex-wrap gap-space-xs mb-space-md">
+                  <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-bold text-xs">
+                    Sin Gluten (Natural)
+                  </span>
+                  <span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-semibold text-xs">
+                    Con 2 Tortillas Caseras
+                  </span>
+                  <span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-semibold text-xs">
+                    Arroz Blanco &amp; Limón Mandarina
+                  </span>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap items-center justify-between gap-space-md pt-space-sm border-t border-outline-variant/20">
+                <div class="flex flex-col">
+                  <span class="text-xs uppercase text-on-surface-variant font-semibold">Porción Abundante</span>
+                  <span class="font-bold text-2xl text-primary">₡6,200 <span class="text-xs text-on-surface-variant font-normal">i.v.a incl.</span></span>
+                </div>
+                <div class="flex items-center gap-space-sm">
+                  <a class="px-4 py-2.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs shadow-xs hover:bg-tertiary transition-colors flex items-center gap-space-xs" href="https://wa.me/50622369755?text=Buenas,%20deseo%20ordenar%20la%20Olla%20de%20Carne%20Criolla%20del%20día" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+                    <span>Pedir Hoy</span>
+                  </a>
+                  <button class="px-4 py-2.5 rounded-lg bg-surface-container-highest text-primary font-bold text-xs hover:bg-primary-container hover:text-on-primary transition-colors flex items-center gap-space-xs shadow-xs" onclick="quickViewDish('Olla de Carne Criolla', '6200', 'Sopas')" type="button">
+                    <span class="material-symbols-outlined text-[18px]">info</span>
+                    <span>Ver Detalles</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 relative min-h-[260px] lg:min-h-full overflow-hidden">
+              <img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" alt="Olla de Carne Criolla" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8GnTtFSrOPQe5UIWEHBmO9rHT3CRbrYiF0eMs2g_WsO7ZDiNfX5Sr6qH3hmPM-UqzU-GhGSdfQi46uuvsvJoc2KPsvQ4oMZxJJxls-3b60Ck4jPOF_9wS_ARAtfCXlp2vz6wUqEJSrLqRkFe19QnCcsVhpkMwAXf6l5KAVe4-_0t9AG_DVI-YRNid6wkNu6tFFkSbt8YlKFLkgyZxZKbe0a94_KE3xbVS1YyRNNYI"/>
+              <div class="absolute top-4 right-4 bg-surface/90 backdrop-blur-md px-3 py-1 rounded-full shadow flex items-center gap-space-xs text-primary">
+                <span class="material-symbols-outlined text-[18px] text-tertiary-container">verified</span>
+                <span class="text-xs font-bold">Plato Insignia</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEARCH ENGINE & LIVE FILTER CONSOLE -->
+        <div class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-md lg:p-space-lg mb-space-lg border border-outline-variant/20">
+          
+          <!-- Search Input with Clear Action and Quick Results Preview -->
+          <div class="relative w-full mb-space-md">
+            <label class="text-xs sm:text-sm text-on-surface mb-1.5 block font-bold" for="dishSearchInput">
+              ¿Qué se le antoja saborear hoy en Tibás?
+            </label>
+            <div class="relative flex items-center">
+              <span class="material-symbols-outlined absolute left-4 text-outline text-[22px] pointer-events-none">search</span>
+              <input autocomplete="off" class="w-full pl-12 pr-12 py-3 bg-surface-container-low text-on-surface text-sm rounded-xl outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all placeholder:text-outline border border-outline-variant/20" id="dishSearchInput" oninput="handleSearch(this.value)" placeholder="Buscar por platillo, acompañamiento o ingrediente (ej. Gallo Pinto, Chifrijo, Casado, Picadillo...)" type="text"/>
+              <button class="absolute right-3 hidden p-1 text-outline hover:text-primary transition-colors" id="clearSearchBtn" onclick="clearSearch()" title="Limpiar búsqueda" type="button">
+                <span class="material-symbols-outlined text-[20px]">close</span>
+              </button>
+            </div>
+            <!-- Autocomplete Dropdown List -->
+            <div class="hidden absolute top-full left-0 right-0 mt-1 bg-surface-container-lowest rounded-xl shadow-2xl z-30 max-h-64 overflow-y-auto border border-outline-variant/20" id="autocompleteList"></div>
+          </div>
+
+          <!-- Filter Controls: Categoría, Preferencias Dietéticas, Rango de Precio -->
+          <div class="flex flex-col gap-space-md">
+            
+            <!-- Categoría de Menú -->
+            <div class="flex flex-col gap-space-xs">
+              <div class="flex items-center justify-between">
+                <span class="text-xs text-on-surface-variant font-bold uppercase tracking-wider">
+                  Categoría
+                </span>
+                <span class="text-xs text-primary font-bold" id="activeCountBadge">
+                  Mostrando todos los platillos
+                </span>
+              </div>
+              <div class="flex flex-wrap gap-2" id="categoryChips">
+                <button class="category-chip px-3 py-1.5 rounded-full font-bold text-xs bg-primary text-on-primary shadow-xs transition-all" data-category="Todos" onclick="selectCategory('Todos', this)" type="button">
+                  Todos
+                </button>
+                <button class="category-chip px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-category="Desayunos" onclick="selectCategory('Desayunos', this)" type="button">
+                  Desayunos
+                </button>
+                <button class="category-chip px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-category="Almuerzos Ejecutivos" onclick="selectCategory('Almuerzos Ejecutivos', this)" type="button">
+                  Almuerzos Ejecutivos
+                </button>
+                <button class="category-chip px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-category="Casados" onclick="selectCategory('Casados', this)" type="button">
+                  Casados
+                </button>
+                <button class="category-chip px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-category="Carnes" onclick="selectCategory('Carnes', this)" type="button">
+                  Carnes
+                </button>
+                <button class="category-chip px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-category="Sopas" onclick="selectCategory('Sopas', this)" type="button">
+                  Sopas
+                </button>
+                <button class="category-chip px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-category="Antojos" onclick="selectCategory('Antojos', this)" type="button">
+                  Antojos &amp; Bocas
+                </button>
+                <button class="category-chip px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-category="Bebidas" onclick="selectCategory('Bebidas', this)" type="button">
+                  Bebidas &amp; Cafés
+                </button>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+              <!-- Preferencias & Sellos -->
+              <div class="flex flex-col gap-space-xs">
+                <span class="text-xs text-on-surface-variant font-bold uppercase tracking-wider">
+                  Preferencias &amp; Sellos
+                </span>
+                <div class="flex flex-wrap gap-2" id="tagChips">
+                  <button class="tag-chip flex items-center gap-1 px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-tag="Vegetariano" onclick="toggleTag('Vegetariano', this)" type="button">
+                    <span class="material-symbols-outlined text-[16px] text-emerald-700">eco</span>
+                    <span>Opciones Vegetarianas</span>
+                  </button>
+                  <button class="tag-chip flex items-center gap-1 px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-tag="Sin Gluten" onclick="toggleTag('Sin Gluten', this)" type="button">
+                    <span class="material-symbols-outlined text-[16px] text-tertiary">grain</span>
+                    <span>Sin Gluten</span>
+                  </button>
+                  <button class="tag-chip flex items-center gap-1 px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-tag="Especial del Día" onclick="toggleTag('Especial del Día', this)" type="button">
+                    <span class="material-symbols-outlined text-[16px] text-tertiary-container">stars</span>
+                    <span>Especiales del Día</span>
+                  </button>
+                  <button class="tag-chip flex items-center gap-1 px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-tag="Popular" onclick="toggleTag('Popular', this)" type="button">
+                    <span class="material-symbols-outlined text-[16px] text-primary">local_fire_department</span>
+                    <span>Más Populares</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Rango de Precio en Colones -->
+              <div class="flex flex-col gap-space-xs">
+                <span class="text-xs text-on-surface-variant font-bold uppercase tracking-wider">
+                  Rango de Precio (Colones ₡)
+                </span>
+                <div class="flex flex-wrap gap-2" id="priceChips">
+                  <button class="price-chip px-3 py-1.5 rounded-full font-bold text-xs bg-primary text-on-primary shadow-xs transition-all" data-price="all" onclick="selectPrice('all', this)" type="button">
+                    Cualquier precio
+                  </button>
+                  <button class="price-chip px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-price="under5k" onclick="selectPrice('under5k', this)" type="button">
+                    Menos de ₡5,000
+                  </button>
+                  <button class="price-chip px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-price="5k75k" onclick="selectPrice('5k75k', this)" type="button">
+                    ₡5,000 - ₡7,500
+                  </button>
+                  <button class="price-chip px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-price="75k10k" onclick="selectPrice('75k10k', this)" type="button">
+                    ₡7,500 - ₡10,000
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Filter Reset & Active Tag Bar -->
+            <div class="flex items-center justify-between pt-space-xs text-on-surface-variant border-t border-outline-variant/20 text-xs">
+              <div class="flex items-center gap-space-xs">
+                <span class="material-symbols-outlined text-[18px] text-tertiary">tune</span>
+                <span id="activeFiltersSummary">Mostrando carta completa con disponibilidad en tiempo real</span>
+              </div>
+              <button class="text-primary hover:underline font-bold" onclick="resetAllFilters()" type="button">
+                Reestablecer Filtros
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- DISH CARDS GRID RESULT SECTION -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg mb-space-xl" id="dishesGrid">
+          
+          <!-- Dish 1 -->
+          <article class="dish-item flex flex-col bg-surface-container-lowest rounded-2xl shadow-xs hover:shadow-xl transition-all duration-300 overflow-hidden group border border-outline-variant/20" data-category="Casados" data-price="5600" data-tags="Popular,Sin Gluten" data-title="Casado con Carne Mechada">
+            <div class="relative h-48 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Casado con Carne Mechada" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMp_kpo1KyAPnjfurjD6Ez-_PIhV1wCemx2Lyq6wFbm2IodfozOyVWcfhGlk5M5lhSIh99sfIaMge5O7IcDdIPsCfVhelKqutSkgQv962EwCk-kPCUePT999EvSFZB6pPoAWN0I74TdPjZOjcecxzGDtl7s7SwM2mdzRV3C1wJc4s16-l9_nGnrRJsrvpXgt_PaTvKWtozr2--4HeJdtfmHd_tsttIidKic6kf6duO"/>
+              <div class="absolute top-3 left-3 flex gap-1">
+                <span class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-bold text-xs shadow-sm">Favorito Tibás</span>
+              </div>
+              <span class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-xs text-on-surface font-semibold shadow-xs">
+                Casados
+              </span>
+            </div>
+            <div class="p-space-md flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-headline-sm text-base font-bold text-primary group-hover:text-primary-container transition-colors mb-1">
+                  Casado con Carne Mechada
+                </h3>
+                <p class="text-xs text-on-surface-variant mb-space-sm line-clamp-2 leading-relaxed">
+                  Carne de res tierna mechada en sofrito criollo, arroz blanco, frijoles negros sazonados, plátano maduro frito, ensalada verde y picadillo de chayote.
+                </p>
+                <div class="flex flex-wrap gap-1 mb-space-sm">
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-on-surface-variant font-medium">Sin Gluten</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-on-surface-variant font-medium">Con Picadillo</span>
+                </div>
+              </div>
+              <div class="pt-space-sm flex items-center justify-between border-t border-outline-variant/20">
+                <div class="flex flex-col">
+                  <span class="font-bold text-base text-primary">₡5,600</span>
+                  <span class="text-xs text-emerald-700 flex items-center gap-0.5 font-semibold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Listo en 15 min
+                  </span>
+                </div>
+                <div class="flex items-center gap-space-xs">
+                  <button class="p-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" onclick="quickViewDish('Casado con Carne Mechada', '5600', 'Casados')" title="Personalizar platillo" type="button">
+                    <span class="material-symbols-outlined text-[18px]">tune</span>
+                  </button>
+                  <a class="px-3 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs shadow-xs hover:bg-tertiary transition-colors flex items-center gap-1" href="https://wa.me/50622369755?text=Deseo%20ordenar%20Casado%20con%20Carne%20Mechada%20(CRC%205,600)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+                    <span>Pedir</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 2 -->
+          <article class="dish-item flex flex-col bg-surface-container-lowest rounded-2xl shadow-xs hover:shadow-xl transition-all duration-300 overflow-hidden group border border-outline-variant/20" data-category="Antojos" data-price="4800" data-tags="Popular,Sin Gluten" data-title="Chifrijo Las Delicias">
+            <div class="relative h-48 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Chifrijo Las Delicias" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDVw6TP9FzbsEAC14xsoYjlmzJS8N1jMGsj3u2pJTGW16d174GN3_BKeddpwRMxhouS9Pi2SzcCUOwz_2_LLdpPuDEpdNIve8JZI9eUHci-rta-BYxNaThLC2yZ-RRtCFI-oz6qDT3zOrd3yyFgaXoojhWlLNQCI1-IfCM70_4FtWB_XFlNMTKx8G3sPQMEk2L-ZIy7wTy_bm5-nmjdActmSiOYuaIrP-lKJjTgaAa"/>
+              <div class="absolute top-3 left-3 flex gap-1">
+                <span class="px-2.5 py-1 rounded-full bg-tertiary-container text-on-tertiary font-bold text-xs shadow-sm">Popular #1</span>
+              </div>
+              <span class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-xs text-on-surface font-semibold shadow-xs">
+                Antojos &amp; Bocas
+              </span>
+            </div>
+            <div class="p-space-md flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-headline-sm text-base font-bold text-primary group-hover:text-primary-container transition-colors mb-1">
+                  Chifrijo Las Delicias
+                </h3>
+                <p class="text-xs text-on-surface-variant mb-space-sm line-clamp-2 leading-relaxed">
+                  Frijoles tiernos en su caldo especial, arroz blanco, chicharrón crujiente de carne y pellejo, chimichurri casero con limón mandarino y aguacate de temporada.
+                </p>
+                <div class="flex flex-wrap gap-1 mb-space-sm">
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-on-surface-variant font-medium">Sin Gluten</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-on-surface-variant font-medium">Aguacate Fresco</span>
+                </div>
+              </div>
+              <div class="pt-space-sm flex items-center justify-between border-t border-outline-variant/20">
+                <div class="flex flex-col">
+                  <span class="font-bold text-base text-primary">₡4,800</span>
+                  <span class="text-xs text-emerald-700 flex items-center gap-0.5 font-semibold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Crujiente al momento
+                  </span>
+                </div>
+                <div class="flex items-center gap-space-xs">
+                  <button class="p-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" onclick="quickViewDish('Chifrijo Las Delicias', '4800', 'Antojos')" type="button">
+                    <span class="material-symbols-outlined text-[18px]">tune</span>
+                  </button>
+                  <a class="px-3 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs shadow-xs hover:bg-tertiary transition-colors flex items-center gap-1" href="https://wa.me/50622369755?text=Deseo%20ordenar%20Chifrijo%20Las%20Delicias%20(CRC%204,800)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+                    <span>Pedir</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 3 -->
+          <article class="dish-item flex flex-col bg-surface-container-lowest rounded-2xl shadow-xs hover:shadow-xl transition-all duration-300 overflow-hidden group border border-outline-variant/20" data-category="Desayunos" data-price="4200" data-tags="Popular,Sin Gluten" data-title="Gallo Pinto Especial con Queso Frito">
+            <div class="relative h-48 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Gallo Pinto Especial" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClnO9XN2CgYBoy23KwJdNuPMZaA-m-XilnZXOYIgY8FtsK3NjQbHhblWSEsul2BAnjXJiFLzND8r_0p5gLTk9mHjWiOI0wltXl0sqtRy26blLjCgj8b-43ztIcyQHQLjTfcq0kJjxK9rh9Xux-wiVNQbTYqSHd663R9XPZmRdXv45klJPjW2oFaDzlpJT5kCFST025PWGYVYNNaBmSBEIUPoHWpnlqzovZprEqpbfd"/>
+              <div class="absolute top-3 left-3 flex gap-1">
+                <span class="px-2.5 py-1 rounded-full bg-surface-container text-tertiary font-bold text-xs shadow-sm">Desde 6:00 AM</span>
+              </div>
+              <span class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-xs text-on-surface font-semibold shadow-xs">
+                Desayunos
+              </span>
+            </div>
+            <div class="p-space-md flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-headline-sm text-base font-bold text-primary group-hover:text-primary-container transition-colors mb-1">
+                  Gallo Pinto Especial
+                </h3>
+                <p class="text-xs text-on-surface-variant mb-space-sm line-clamp-2 leading-relaxed">
+                  Pinto con salsa inglesa casera, 2 huevos al gusto, queso Turrialba sellado a la plancha, plátano maduro, natilla y tortillas palmeadas.
+                </p>
+                <div class="flex flex-wrap gap-1 mb-space-sm">
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-on-surface-variant font-medium">Sin Gluten</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-on-surface-variant font-medium">Sabor a Fogón</span>
+                </div>
+              </div>
+              <div class="pt-space-sm flex items-center justify-between border-t border-outline-variant/20">
+                <div class="flex flex-col">
+                  <span class="font-bold text-base text-primary">₡4,200</span>
+                  <span class="text-xs text-emerald-700 flex items-center gap-0.5 font-semibold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Servido caliente
+                  </span>
+                </div>
+                <div class="flex items-center gap-space-xs">
+                  <button class="p-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" onclick="quickViewDish('Gallo Pinto Especial', '4200', 'Desayunos')" type="button">
+                    <span class="material-symbols-outlined text-[18px]">tune</span>
+                  </button>
+                  <a class="px-3 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs shadow-xs hover:bg-tertiary transition-colors flex items-center gap-1" href="https://wa.me/50622369755?text=Deseo%20ordenar%20Gallo%20Pinto%20Especial%20(CRC%204,200)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+                    <span>Pedir</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 4 -->
+          <article class="dish-item flex flex-col bg-surface-container-lowest rounded-2xl shadow-xs hover:shadow-xl transition-all duration-300 overflow-hidden group border border-outline-variant/20" data-category="Casados" data-price="4900" data-tags="Vegetariano,Sin Gluten,Especial del Día" data-title="Casado Vegetariano de la Huerta">
+            <div class="relative h-48 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Casado Vegetariano" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAst0bhQCiBpLXiqfsMpnlErmujdE-2v9yuMJv-ZHp0TJnxveA3HJGPWHMIzovEg0I0AfbR8OaeD7YeYrp_L3QBRHgnmENrCXCzuASt9Mf0vsrKuzaG_LpdHleyfiCeCKqING6hXgP9MVpGUKNao1FjercRLeKmXA7e8yg-Ups2R2LDaLwJAsdatijBPmLwNmDn2OZSAUtMrISklrPHJ7MQ7nyjluQsgRI6N6ZOxYTD"/>
+              <div class="absolute top-3 left-3 flex gap-1">
+                <span class="px-2.5 py-1 rounded-full bg-emerald-800 text-on-tertiary font-bold text-xs shadow-sm flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[14px]">eco</span>
+                  <span>Vegetariano</span>
+                </span>
+              </div>
+              <span class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-xs text-on-surface font-semibold shadow-xs">
+                Casados
+              </span>
+            </div>
+            <div class="p-space-md flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-headline-sm text-base font-bold text-primary group-hover:text-primary-container transition-colors mb-1">
+                  Casado Vegetariano de la Huerta
+                </h3>
+                <p class="text-xs text-on-surface-variant mb-space-sm line-clamp-2 leading-relaxed">
+                  Torta de huevo con espinacas o berenjena dorada, con picadillo de vainica y zanahoria, arroz, frijoles tiernos y aguacate hass.
+                </p>
+                <div class="flex flex-wrap gap-1 mb-space-sm">
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-emerald-800 font-bold">Vegetariano</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-on-surface-variant font-medium">Sin Gluten</span>
+                </div>
+              </div>
+              <div class="pt-space-sm flex items-center justify-between border-t border-outline-variant/20">
+                <div class="flex flex-col">
+                  <span class="font-bold text-base text-primary">₡4,900</span>
+                  <span class="text-xs text-emerald-700 flex items-center gap-0.5 font-semibold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Huerta local de Tibás
+                  </span>
+                </div>
+                <div class="flex items-center gap-space-xs">
+                  <button class="p-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" onclick="quickViewDish('Casado Vegetariano de la Huerta', '4900', 'Casados')" type="button">
+                    <span class="material-symbols-outlined text-[18px]">tune</span>
+                  </button>
+                  <a class="px-3 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs shadow-xs hover:bg-tertiary transition-colors flex items-center gap-1" href="https://wa.me/50622369755?text=Deseo%20ordenar%20Casado%20Vegetariano%20(CRC%204,900)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+                    <span>Pedir</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 5 -->
+          <article class="dish-item flex flex-col bg-surface-container-lowest rounded-2xl shadow-xs hover:shadow-xl transition-all duration-300 overflow-hidden group border border-outline-variant/20" data-category="Almuerzos Ejecutivos" data-price="4500" data-tags="Popular,Especial del Día" data-title="Ejecutivo Bistec Encebollado">
+            <div class="relative h-48 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Ejecutivo Bistec Encebollado" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe-bCbRZIRZ69MCvljez1q5c3xHMOOKKON1mHdd2iwfQVr-6VGT7AW40O2OjiAr2q5btrQQHfH-WSxwTl75Q9G99yOMUf2aJlcLKwtPwyVTM0XOLRrV9rKoSv-vz0q9x5Oq2myr1vM9-LfiVvF_n9lOeJXhqgwMLnZ9Te3PzKNcdWsB0Fi6TCHF9mkQDGmWLOmSPVs1C1CmNSz6LMa8C5DdNVoFGvvACYSzKJLv-sf"/>
+              <div class="absolute top-3 left-3 flex gap-1">
+                <span class="px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-bold text-xs shadow-sm">Incluye Fresco Natural</span>
+              </div>
+              <span class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-xs text-on-surface font-semibold shadow-xs">
+                Almuerzos Ejecutivos
+              </span>
+            </div>
+            <div class="p-space-md flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-headline-sm text-base font-bold text-primary group-hover:text-primary-container transition-colors mb-1">
+                  Ejecutivo Bistec Encebollado
+                </h3>
+                <p class="text-xs text-on-surface-variant mb-space-sm line-clamp-2 leading-relaxed">
+                  Filete magro con cebolla blanca salteada y jugos naturales. Servido con arroz, frijoles, ensalada del día y té frío o fresco natural de cas.
+                </p>
+                <div class="flex flex-wrap gap-1 mb-space-sm">
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-on-surface-variant font-medium">Incluye Bebida</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-on-surface-variant font-medium">Lunes a Sábado</span>
+                </div>
+              </div>
+              <div class="pt-space-sm flex items-center justify-between border-t border-outline-variant/20">
+                <div class="flex flex-col">
+                  <span class="font-bold text-base text-primary">₡4,500</span>
+                  <span class="text-xs text-emerald-700 flex items-center gap-0.5 font-semibold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> 11:30 AM a 3:00 PM
+                  </span>
+                </div>
+                <div class="flex items-center gap-space-xs">
+                  <button class="p-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" onclick="quickViewDish('Ejecutivo Bistec Encebollado', '4500', 'Almuerzos Ejecutivos')" type="button">
+                    <span class="material-symbols-outlined text-[18px]">tune</span>
+                  </button>
+                  <a class="px-3 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs shadow-xs hover:bg-tertiary transition-colors flex items-center gap-1" href="https://wa.me/50622369755?text=Deseo%20ordenar%20Ejecutivo%20Bistec%20Encebollado%20(CRC%204,500)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+                    <span>Pedir</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 6 -->
+          <article class="dish-item flex flex-col bg-surface-container-lowest rounded-2xl shadow-xs hover:shadow-xl transition-all duration-300 overflow-hidden group border border-outline-variant/20" data-category="Sopas" data-price="3900" data-tags="Vegetariano,Sin Gluten,Especial del Día" data-title="Sopa Negra Tradicional">
+            <div class="relative h-48 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Sopa Negra" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdlkcYvtuJwSxNZqntJFX-5gT4OYsVmKpaGtRQ2E1JTsfnge_pN7OgzmjL4NXAY8wHolyRgY295K9Hz7vRfytUvC_gCN58_LJZtT3qv2cwACTSVUr3bZWyAfjUxfNUANlcdjc_VmDwSwzvyWZZMWhkXpiMXW1vL7DM8TZt1kccB5m1-CFitnw9_MtkDrFg70uYnloJaV-g_1JaxeuryN0QwKNfvL27bnD3PTWzO-Fz"/>
+              <div class="absolute top-3 left-3 flex gap-1">
+                <span class="px-2.5 py-1 rounded-full bg-surface-container text-primary font-bold text-xs shadow-sm">Reconfortante</span>
+              </div>
+              <span class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-xs text-on-surface font-semibold shadow-xs">
+                Sopas
+              </span>
+            </div>
+            <div class="p-space-md flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-headline-sm text-base font-bold text-primary group-hover:text-primary-container transition-colors mb-1">
+                  Sopa Negra Tradicional
+                </h3>
+                <p class="text-xs text-on-surface-variant mb-space-sm line-clamp-2 leading-relaxed">
+                  Caldo aterciopelado de frijoles negros criollos perfumado con culantro coyote. Servido con huevo cocido en el caldo, arroz blanco y tortillas caseras.
+                </p>
+                <div class="flex flex-wrap gap-1 mb-space-sm">
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-emerald-800 font-bold">Vegetariano</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-on-surface-variant font-medium">Sin Gluten</span>
+                </div>
+              </div>
+              <div class="pt-space-sm flex items-center justify-between border-t border-outline-variant/20">
+                <div class="flex flex-col">
+                  <span class="font-bold text-base text-primary">₡3,900</span>
+                  <span class="text-xs text-emerald-700 flex items-center gap-0.5 font-semibold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Caldo de la casa
+                  </span>
+                </div>
+                <div class="flex items-center gap-space-xs">
+                  <button class="p-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" onclick="quickViewDish('Sopa Negra Tradicional', '3900', 'Sopas')" type="button">
+                    <span class="material-symbols-outlined text-[18px]">tune</span>
+                  </button>
+                  <a class="px-3 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs shadow-xs hover:bg-tertiary transition-colors flex items-center gap-1" href="https://wa.me/50622369755?text=Deseo%20ordenar%20Sopa%20Negra%20Tradicional%20(CRC%203,900)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+                    <span>Pedir</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 7 -->
+          <article class="dish-item flex flex-col bg-surface-container-lowest rounded-2xl shadow-xs hover:shadow-xl transition-all duration-300 overflow-hidden group border border-outline-variant/20" data-category="Carnes" data-price="8900" data-tags="Popular,Sin Gluten" data-title="Churrasco Típico al Carbón">
+            <div class="relative h-48 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Churrasco Típico" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWMO6WLEeH5P0AkHlHJfPtXSLauy6IMG_zB1KLGFoyArmOZViDYOopMibSJjarf01uA9NdkwS5KXsX3NcLGRj6rj5KuOOUmb599Dsqv1iV7Y5nErytm6_xM_hNkQZ5diBfaTZSWZd5MArl2YNY04MuJW0vpFWJi1BeZhJEiXqfL9Vp_uhxAPfwzgM2Me023I4uFGhgDjwj5iWdyc2wKOqRfPiIlIR0v2HeCNOgBgZl"/>
+              <div class="absolute top-3 left-3 flex gap-1">
+                <span class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-bold text-xs shadow-sm">A la Leña</span>
+              </div>
+              <span class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-xs text-on-surface font-semibold shadow-xs">
+                Carnes
+              </span>
+            </div>
+            <div class="p-space-md flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-headline-sm text-base font-bold text-primary group-hover:text-primary-container transition-colors mb-1">
+                  Churrasco Típico al Carbón
+                </h3>
+                <p class="text-xs text-on-surface-variant mb-space-sm line-clamp-2 leading-relaxed">
+                  Corte selecto de 350g preparado a las brasas con sal marina. Acompañado de chimichurri artesanal, yuca al vapor y maduro con queso derretido.
+                </p>
+                <div class="flex flex-wrap gap-1 mb-space-sm">
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-on-surface-variant font-medium">Corte Premium</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-on-surface-variant font-medium">Sin Gluten</span>
+                </div>
+              </div>
+              <div class="pt-space-sm flex items-center justify-between border-t border-outline-variant/20">
+                <div class="flex flex-col">
+                  <span class="font-bold text-base text-primary">₡8,900</span>
+                  <span class="text-xs text-emerald-700 flex items-center gap-0.5 font-semibold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Término a su gusto
+                  </span>
+                </div>
+                <div class="flex items-center gap-space-xs">
+                  <button class="p-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" onclick="quickViewDish('Churrasco Típico al Carbón', '8900', 'Carnes')" type="button">
+                    <span class="material-symbols-outlined text-[18px]">tune</span>
+                  </button>
+                  <a class="px-3 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs shadow-xs hover:bg-tertiary transition-colors flex items-center gap-1" href="https://wa.me/50622369755?text=Deseo%20ordenar%20Churrasco%20Típico%20(CRC%208,900)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+                    <span>Pedir</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 8 -->
+          <article class="dish-item flex flex-col bg-surface-container-lowest rounded-2xl shadow-xs hover:shadow-xl transition-all duration-300 overflow-hidden group border border-outline-variant/20" data-category="Bebidas" data-price="1800" data-tags="Popular,Vegetariano,Sin Gluten" data-title="Café Chorreado en Mesa">
+            <div class="relative h-48 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Café Chorreado" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGH-s2llqTAXiIwbxhtd6gv0I1JyxFFhtnq4molYpX49PRdAgz2QYiHVDNtoWnDlj7A0fFTr6pO9ckZXhWfME579hrczgD16iKrRHzxbvnU3lTohwfjGHi0VEKy_Rgac95djcjHxcmvZJGxa0nTucu1QAvgNkxKa7xNGNkouAwZK_EzKoTFxvXcmEfaFVXQh1SPqw3TEJtLFNM3wcT9PY8ckcToN3myELr8CmBeiqe"/>
+              <div class="absolute top-3 left-3 flex gap-1">
+                <span class="px-2.5 py-1 rounded-full bg-tertiary text-on-tertiary font-bold text-xs shadow-sm">100% Tarrazú</span>
+              </div>
+              <span class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-xs text-on-surface font-semibold shadow-xs">
+                Bebidas &amp; Cafés
+              </span>
+            </div>
+            <div class="p-space-md flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-headline-sm text-base font-bold text-primary group-hover:text-primary-container transition-colors mb-1">
+                  Café Chorreado en Mesa
+                </h3>
+                <p class="text-xs text-on-surface-variant mb-space-sm line-clamp-2 leading-relaxed">
+                  Chorreado al instante en su mesa con chorreador típico de madera. Tueste medio con notas a miel y cacao. Servido con dulce de tapa o azúcar.
+                </p>
+                <div class="flex flex-wrap gap-1 mb-space-sm">
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-on-surface-variant font-medium">Artesanal</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-on-surface-variant font-medium">En Mesa</span>
+                </div>
+              </div>
+              <div class="pt-space-sm flex items-center justify-between border-t border-outline-variant/20">
+                <div class="flex flex-col">
+                  <span class="font-bold text-base text-primary">₡1,800</span>
+                  <span class="text-xs text-emerald-700 flex items-center gap-0.5 font-semibold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Chorreado al minuto
+                  </span>
+                </div>
+                <div class="flex items-center gap-space-xs">
+                  <button class="p-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" onclick="quickViewDish('Café Chorreado en Mesa', '1800', 'Bebidas')" type="button">
+                    <span class="material-symbols-outlined text-[18px]">tune</span>
+                  </button>
+                  <a class="px-3 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs shadow-xs hover:bg-tertiary transition-colors flex items-center gap-1" href="https://wa.me/50622369755?text=Deseo%20ordenar%20Café%20Chorreado%20(CRC%201,800)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+                    <span>Pedir</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 9 -->
+          <article class="dish-item flex flex-col bg-surface-container-lowest rounded-2xl shadow-xs hover:shadow-xl transition-all duration-300 overflow-hidden group border border-outline-variant/20" data-category="Antojos" data-price="2600" data-tags="Vegetariano" data-title="Pan Casero con Natilla y Miel de Tapa">
+            <div class="relative h-48 w-full overflow-hidden bg-surface-container">
+              <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Pan Casero con Natilla" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYJJj51kgMsGQzo8Nml5oiw-KXVMqpR6ajnurZYUGAcb9wbni953KrPX4U9vW-g6fwgnuF6ORm7Z76r7dNljNRBSYVjoWiwsocAB6B3vz_eoXuHIO2Dm8mhzhvCj0vSZx1h0tDWP8lRUpY8D4PGIPIe6ouSIxD7lKd-Y7MzVP70CM8GG8YHtWP1pXWAg5y90haBbHbq4HemELaH0dTAsluDV_f9kFTYIsHM5KTUwse"/>
+              <div class="absolute top-3 left-3 flex gap-1">
+                <span class="px-2.5 py-1 rounded-full bg-surface-container text-tertiary font-bold text-xs shadow-sm">Horneado Diario</span>
+              </div>
+              <span class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-md text-xs text-on-surface font-semibold shadow-xs">
+                Antojos &amp; Bocas
+              </span>
+            </div>
+            <div class="p-space-md flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-headline-sm text-base font-bold text-primary group-hover:text-primary-container transition-colors mb-1">
+                  Pan Casero con Natilla &amp; Miel
+                </h3>
+                <p class="text-xs text-on-surface-variant mb-space-sm line-clamp-2 leading-relaxed">
+                  Pan dulce artesanal horneado cada mañana, servido con natilla espesa de la casa y sirope de dulce de caña de trapiche cocinado a fuego lento.
+                </p>
+                <div class="flex flex-wrap gap-1 mb-space-sm">
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-emerald-800 font-bold">Vegetariano</span>
+                  <span class="px-2 py-0.5 rounded bg-surface-container text-xs text-on-surface-variant font-medium">Receta Tradicional</span>
+                </div>
+              </div>
+              <div class="pt-space-sm flex items-center justify-between border-t border-outline-variant/20">
+                <div class="flex flex-col">
+                  <span class="font-bold text-base text-primary">₡2,600</span>
+                  <span class="text-xs text-emerald-700 flex items-center gap-0.5 font-semibold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Calientito al comal
+                  </span>
+                </div>
+                <div class="flex items-center gap-space-xs">
+                  <button class="p-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" onclick="quickViewDish('Pan Casero con Natilla', '2600', 'Antojos')" type="button">
+                    <span class="material-symbols-outlined text-[18px]">tune</span>
+                  </button>
+                  <a class="px-3 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs shadow-xs hover:bg-tertiary transition-colors flex items-center gap-1" href="https://wa.me/50622369755?text=Deseo%20ordenar%20Pan%20Casero%20con%20Natilla%20(CRC%202,600)" rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+                    <span>Pedir</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- EMPTY STATE WHEN NO DISH MATCHES -->
+        <div class="hidden flex-col items-center justify-center p-space-xl bg-surface-container-lowest rounded-2xl shadow-sm text-center max-w-lg mx-auto mb-space-xl border border-outline-variant/20" id="noResultsState">
+          <span class="material-symbols-outlined text-outline text-5xl mb-space-sm">search_off</span>
+          <h3 class="font-headline-sm text-lg font-bold text-primary mb-1">No encontramos platillos con esos filtros</h3>
+          <p class="text-xs sm:text-sm text-on-surface-variant mb-space-md">
+            Pruebe relajando los criterios de precio o desmarcando preferencias dietéticas para explorar más sazón casero.
+          </p>
+          <button class="px-5 py-2.5 rounded-lg bg-primary text-on-primary font-bold text-xs shadow-xs hover:bg-primary-container transition-colors" onclick="resetAllFilters()" type="button">
+            Ver todo el menú
+          </button>
+        </div>
+
+        <!-- DELIVERY & LOCAL KITCHEN GUARANTEE MOSAIC -->
+        <div class="bg-surface-container-high rounded-2xl p-space-lg lg:p-space-xl mb-space-lg shadow-xs border border-outline-variant/20">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg items-center">
+            <div class="flex items-start gap-space-sm">
+              <div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-xs">
+                <span class="material-symbols-outlined text-[26px]">moped</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-bold text-sm sm:text-base text-primary">Entrega Express en Tibás</span>
+                <span class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">
+                  San Juan, Cuatro Reinas, Colima, Llorente y Santo Domingo sur. Empaque térmico biodegradable que preserva el calor.
+                </span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-space-sm">
+              <div class="w-12 h-12 rounded-xl bg-tertiary text-on-tertiary flex items-center justify-center shrink-0 shadow-xs">
+                <span class="material-symbols-outlined text-[26px]">soup_kitchen</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-bold text-sm sm:text-base text-primary">Hecho a la Orden</span>
+                <span class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">
+                  Tortillas palmeadas a mano al instante, picadillos del día picados finos y caldos concentrados hervidos a fuego lento.
+                </span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-space-sm">
+              <div class="w-12 h-12 rounded-xl bg-surface-container-lowest text-tertiary-container flex items-center justify-center shrink-0 shadow-xs">
+                <span class="material-symbols-outlined text-[26px]">call_quality</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-bold text-sm sm:text-base text-primary">Atención Directa</span>
+                <span class="text-xs text-on-surface-variant mt-0.5 leading-relaxed">
+                  Personalice su orden por WhatsApp: agregue más salsa Lizano, cambie picadillos o elija el término exacto de su carne.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- INTERACTIVE DISH CUSTOMIZER MODAL -->
+  <div class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4" id="dishModal">
+    <div class="bg-surface-container-lowest rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden flex flex-col max-h-[90vh] border border-outline-variant/30">
+      <!-- Modal Header -->
+      <div class="p-space-md bg-surface-container flex items-center justify-between border-b border-outline-variant/20">
+        <div class="flex flex-col">
+          <span class="text-xs text-tertiary uppercase font-bold tracking-wide" id="modalDishCategory">Platillo Típico</span>
+          <h3 class="font-headline-sm text-lg font-bold text-primary" id="modalDishTitle">Detalle de Platillo</h3>
+        </div>
+        <button class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors shadow-xs" onclick="closeModal()" type="button">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <!-- Modal Body (Custom Accompaniments) -->
+      <div class="p-space-md overflow-y-auto flex flex-col gap-space-md">
+        <div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/20">
+          <span class="text-sm text-on-surface font-semibold">Precio base:</span>
+          <span class="font-bold text-xl text-primary" id="modalDishPrice">₡0</span>
+        </div>
+
+        <!-- Customizer Checklist -->
+        <div class="flex flex-col gap-space-xs">
+          <label class="text-xs text-on-surface font-bold uppercase tracking-wider">
+            Elija sus Acompañamientos Tradicionales:
+          </label>
+          <div class="flex flex-col gap-2">
+            <label class="flex items-center gap-space-sm p-2 rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+              <input checked="" class="w-4 h-4 accent-primary rounded cursor-pointer" type="checkbox" id="sideTortillas"/>
+              <span class="text-xs text-on-surface">Tortillas caseras palmeadas al comal (2 unidades)</span>
+            </label>
+            <label class="flex items-center gap-space-sm p-2 rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+              <input checked="" class="w-4 h-4 accent-primary rounded cursor-pointer" type="checkbox" id="sidePicadillo"/>
+              <span class="text-xs text-on-surface">Picadillo fresco del día (Chayote criollo o papa)</span>
+            </label>
+            <label class="flex items-center gap-space-sm p-2 rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+              <input class="w-4 h-4 accent-primary rounded cursor-pointer" type="checkbox" id="sideExtraMaduro"/>
+              <span class="text-xs text-on-surface">Extra porción de maduro frito con natilla (+₡700)</span>
+            </label>
+            <label class="flex items-center gap-space-sm p-2 rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+              <input class="w-4 h-4 accent-primary rounded cursor-pointer" type="checkbox" id="sideLizano"/>
+              <span class="text-xs text-on-surface">Salsa Lizano original servida aparte</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Special Notes -->
+        <div class="flex flex-col gap-1">
+          <label class="text-xs text-on-surface font-bold" for="orderNotes">
+            Instrucciones para la Cocina / Mesa:
+          </label>
+          <textarea class="w-full p-2.5 bg-surface-container text-on-surface text-xs rounded-xl outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary border border-outline-variant/20 resize-none" id="orderNotes" placeholder="Ej. Huevos con yema tierna, sin cebolla en el chimichurri, empacar térmico para llevar..." rows="2"></textarea>
+        </div>
+      </div>
+
+      <!-- Modal Footer Action -->
+      <div class="p-space-md bg-surface-container-low flex items-center justify-between gap-space-sm border-t border-outline-variant/20">
+        <button class="px-4 py-2.5 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" onclick="closeModal()" type="button">
+          Cerrar
+        </button>
+        <button class="flex-1 px-4 py-2.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs shadow-md hover:bg-tertiary transition-colors flex items-center justify-center gap-space-xs" id="modalConfirmBtn" onclick="confirmOrderWhatsApp()" type="button">
+          <span class="material-symbols-outlined text-[18px]">chat</span>
+          <span>Pedir por WhatsApp</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP ACTION BUTTON -->
+  <aside class="fixed bottom-space-lg right-space-lg z-40 flex flex-col items-end gap-space-xs">
+    <a aria-label="WhatsApp Restaurante Las Delicias" class="group flex items-center gap-space-sm pl-space-md pr-space-sm py-space-sm rounded-full bg-tertiary-container text-on-tertiary shadow-[0_8px_20px_-3px_rgba(78,42,28,0.25)] hover:bg-tertiary transition-all duration-300 transform hover:-translate-y-0.5" href="https://wa.me/50622369755?text=Hola%20Restaurante%20Las%20Delicias,%20deseo%20hacer%20un%20pedido%20o%20reserva" rel="noopener noreferrer" target="_blank">
+      <span class="hidden md:inline font-bold text-xs text-on-tertiary">¡Pedí por WhatsApp!</span>
+      <div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-tertiary-container shadow-inner">
+        <span class="material-symbols-outlined text-[24px]">chat</span>
+      </div>
+    </a>
+  </aside>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-surface-container-low text-on-surface shadow-[0_-1px_8px_rgba(78,42,28,0.03)] border-t border-outline-variant/20">
+    <div class="max-w-[1280px] mx-auto px-gutter py-space-xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl">
+        <div class="flex flex-col gap-space-sm">
+          <div class="flex items-center gap-space-sm">
+            <img alt="Restaurante Las Delicias Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX"/>
+            <span class="font-headline-sm text-lg font-bold text-primary">Las Delicias</span>
+          </div>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Auténtica gastronomía costarricense con más de 30 años llevando a su mesa el sazón casero, tortillas palmeadas y el calor de hogar en el corazón de Tibás.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <h3 class="font-bold text-base text-primary">Ubicación &amp; Llegada</h3>
+          <div class="flex items-start gap-space-xs text-on-surface-variant text-xs leading-relaxed">
+            <span class="material-symbols-outlined text-[20px] text-tertiary-container shrink-0 mt-0.5">location_on</span>
+            <span>Donde La Chinita, 25 metros sur del Restaurante Los Antojitos, diagonal sur, San Juan de Tibás, San José, Costa Rica</span>
+          </div>
+          <div class="flex flex-wrap gap-space-xs mt-space-xs">
+            <a class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://maps.google.com/?q=Restaurante+Las+Delicias+Tibas" target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined text-[16px] text-primary">map</span>
+              <span>Google Maps</span>
+            </a>
+            <a class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://waze.com/ul?q=Restaurante+Las+Delicias+Tibas" target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined text-[16px] text-tertiary">navigation</span>
+              <span>Waze</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <h3 class="font-bold text-base text-primary">Horario de Atención</h3>
+          <ul class="flex flex-col gap-space-xs text-xs text-on-surface-variant">
+            <li class="flex justify-between items-center py-0.5">
+              <span class="font-semibold text-on-surface">Lunes a Sábado:</span>
+              <span>7:00 AM – 7:00 PM</span>
+            </li>
+            <li class="flex justify-between items-center py-0.5">
+              <span class="font-semibold text-on-surface">Domingos:</span>
+              <span>6:00 AM – 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-space-sm">
+          <h3 class="font-bold text-base text-primary">Enlaces Rápidos</h3>
+          <nav class="flex flex-col gap-1.5 text-xs text-on-surface-variant">
+            <a class="hover:text-primary transition-colors font-semibold" href="index.html">Inicio</a>
+            <a class="hover:text-primary transition-colors font-semibold" href="menu.html">Menú Típico Completo</a>
+            <a class="hover:text-primary transition-colors font-bold text-primary" href="buscador.html">Buscador &amp; Plato del Día</a>
+            <a class="hover:text-primary transition-colors font-semibold" href="reservas.html">Reservas &amp; Pedidos Especiales</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="pt-space-lg border-t border-outline-variant/20 flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant text-xs">
+        <p>© 2025 Restaurante Las Delicias. Todos los derechos reservados. San Juan de Tibás, Costa Rica.</p>
+        <p>Precios con 13% IVA y 10% servicio incluidos.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC: SEARCH, FILTERS & MODAL -->
+  <script>
+    let currentCategory = 'Todos';
+    let activeTags = new Set();
+    let currentPrice = 'all';
+    let activeDishInModal = null;
+
+    const dishList = [
+      { name: 'Casado con Carne Mechada', category: 'Casados', tags: ['Popular', 'Sin Gluten'], price: 5600 },
+      { name: 'Chifrijo Las Delicias', category: 'Antojos', tags: ['Popular', 'Sin Gluten'], price: 4800 },
+      { name: 'Gallo Pinto Especial con Queso Frito', category: 'Desayunos', tags: ['Popular', 'Sin Gluten'], price: 4200 },
+      { name: 'Casado Vegetariano de la Huerta', category: 'Casados', tags: ['Vegetariano', 'Sin Gluten', 'Especial del Día'], price: 4900 },
+      { name: 'Ejecutivo Bistec Encebollado', category: 'Almuerzos Ejecutivos', tags: ['Popular', 'Especial del Día'], price: 4500 },
+      { name: 'Sopa Negra Tradicional', category: 'Sopas', tags: ['Vegetariano', 'Sin Gluten', 'Especial del Día'], price: 3900 },
+      { name: 'Churrasco Típico al Carbón', category: 'Carnes', tags: ['Popular', 'Sin Gluten'], price: 8900 },
+      { name: 'Café Chorreado en Mesa', category: 'Bebidas', tags: ['Popular', 'Vegetariano', 'Sin Gluten'], price: 1800 },
+      { name: 'Pan Casero con Natilla & Miel de Tapa', category: 'Antojos', tags: ['Vegetariano'], price: 2600 }
+    ];
+
+    function handleSearch(term) {
+      const clearBtn = document.getElementById('clearSearchBtn');
+      const autoList = document.getElementById('autocompleteList');
+      
+      if (term.trim().length > 0) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+        autoList.classList.add('hidden');
+        applyFilters();
+        return;
+      }
+
+      const matches = dishList.filter(d => 
+        d.name.toLowerCase().includes(term.toLowerCase()) || 
+        d.category.toLowerCase().includes(term.toLowerCase())
+      );
+
+      if (matches.length > 0) {
+        autoList.innerHTML = matches.map(m => `
+          <div onclick="selectAutocomplete('${m.name}')" class="px-space-md py-space-sm hover:bg-surface-container cursor-pointer flex items-center justify-between text-on-surface border-b border-outline-variant/10">
+            <div class="flex items-center gap-space-xs">
+              <span class="material-symbols-outlined text-primary text-[18px]">restaurant_menu</span>
+              <span class="text-xs font-semibold">${m.name}</span>
+            </div>
+            <span class="text-xs font-bold text-primary">₡${m.price.toLocaleString()}</span>
+          </div>
+        `).join('');
+        autoList.classList.remove('hidden');
+      } else {
+        autoList.classList.add('hidden');
+      }
+
+      applyFilters();
+    }
+
+    function selectAutocomplete(name) {
+      const input = document.getElementById('dishSearchInput');
+      input.value = name;
+      document.getElementById('autocompleteList').classList.add('hidden');
+      applyFilters();
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('dishSearchInput');
+      input.value = '';
+      document.getElementById('clearSearchBtn').classList.add('hidden');
+      document.getElementById('autocompleteList').classList.add('hidden');
+      applyFilters();
+    }
+
+    function selectCategory(cat, btn) {
+      currentCategory = cat;
+      document.querySelectorAll('.category-chip').forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary', 'shadow-xs');
+        b.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      btn.classList.add('bg-primary', 'text-on-primary', 'shadow-xs');
+      btn.classList.remove('bg-surface-container', 'text-on-surface');
+      applyFilters();
+    }
+
+    function toggleTag(tag, btn) {
+      if (activeTags.has(tag)) {
+        activeTags.delete(tag);
+        btn.classList.remove('bg-primary-container', 'text-on-primary');
+        btn.classList.add('bg-surface-container', 'text-on-surface');
+      } else {
+        activeTags.add(tag);
+        btn.classList.add('bg-primary-container', 'text-on-primary');
+        btn.classList.remove('bg-surface-container', 'text-on-surface');
+      }
+      applyFilters();
+    }
+
+    function selectPrice(priceRange, btn) {
+      currentPrice = priceRange;
+      document.querySelectorAll('.price-chip').forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary', 'shadow-xs');
+        b.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      btn.classList.add('bg-primary', 'text-on-primary', 'shadow-xs');
+      btn.classList.remove('bg-surface-container', 'text-on-surface');
+      applyFilters();
+    }
+
+    function applyFilters() {
+      const searchTerm = (document.getElementById('dishSearchInput').value || '').trim().toLowerCase();
+      const items = document.querySelectorAll('.dish-item');
+      let visibleCount = 0;
+
+      items.forEach(card => {
+        const title = (card.getAttribute('data-title') || '').toLowerCase();
+        const category = card.getAttribute('data-category') || '';
+        const tags = (card.getAttribute('data-tags') || '').split(',');
+        const price = parseInt(card.getAttribute('data-price') || '0', 10);
+
+        // Matches Search Term
+        const matchesSearch = !searchTerm || title.includes(searchTerm) || category.toLowerCase().includes(searchTerm);
+
+        // Matches Category
+        const matchesCategory = (currentCategory === 'Todos') || (category === currentCategory);
+
+        // Matches Dietary Tags
+        let matchesTags = true;
+        if (activeTags.size > 0) {
+          for (let tag of activeTags) {
+            if (!tags.includes(tag)) {
+              matchesTags = false;
+              break;
+            }
+          }
+        }
+
+        // Matches Price
+        let matchesPrice = true;
+        if (currentPrice === 'under5k') {
+          matchesPrice = price < 5000;
+        } else if (currentPrice === '5k75k') {
+          matchesPrice = price >= 5000 && price <= 7500;
+        } else if (currentPrice === '75k10k') {
+          matchesPrice = price > 7500 && price <= 10000;
+        }
+
+        if (matchesSearch && matchesCategory && matchesTags && matchesPrice) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      const noResults = document.getElementById('noResultsState');
+      const badge = document.getElementById('activeCountBadge');
+      const summary = document.getElementById('activeFiltersSummary');
+
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+        noResults.classList.add('flex');
+        badge.textContent = '0 platillos encontrados';
+      } else {
+        noResults.classList.add('hidden');
+        noResults.classList.remove('flex');
+        badge.textContent = `Mostrando ${visibleCount} platillos en menú`;
+      }
+
+      // Dynamic Summary text
+      let filtersDesc = [];
+      if (currentCategory !== 'Todos') filtersDesc.push(`Categoría: ${currentCategory}`);
+      if (activeTags.size > 0) filtersDesc.push(`Filtros: ${Array.from(activeTags).join(', ')}`);
+      if (currentPrice !== 'all') filtersDesc.push(`Rango de precio activo`);
+      
+      summary.textContent = filtersDesc.length > 0 
+        ? filtersDesc.join(' • ') 
+        : 'Mostrando carta completa con disponibilidad en tiempo real';
+    }
+
+    function resetAllFilters() {
+      clearSearch();
+      activeTags.clear();
+      currentCategory = 'Todos';
+      currentPrice = 'all';
+
+      document.querySelectorAll('.category-chip').forEach(b => {
+        const isDefault = b.getAttribute('data-category') === 'Todos';
+        b.className = isDefault 
+          ? 'category-chip px-3 py-1.5 rounded-full font-bold text-xs bg-primary text-on-primary shadow-xs transition-all'
+          : 'category-chip px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all';
+      });
+
+      document.querySelectorAll('.tag-chip').forEach(b => {
+        b.className = 'tag-chip flex items-center gap-1 px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all';
+      });
+
+      document.querySelectorAll('.price-chip').forEach(b => {
+        const isDefault = b.getAttribute('data-price') === 'all';
+        b.className = isDefault
+          ? 'price-chip px-3 py-1.5 rounded-full font-bold text-xs bg-primary text-on-primary shadow-xs transition-all'
+          : 'price-chip px-3 py-1.5 rounded-full font-semibold text-xs bg-surface-container text-on-surface hover:bg-surface-container-high transition-all';
+      });
+
+      applyFilters();
+    }
+
+    function quickViewDish(title, price, category) {
+      activeDishInModal = { title, price, category };
+      document.getElementById('modalDishTitle').textContent = title;
+      document.getElementById('modalDishCategory').textContent = category;
+      document.getElementById('modalDishPrice').textContent = `₡${parseInt(price).toLocaleString()}`;
+      document.getElementById('orderNotes').value = '';
+      const modal = document.getElementById('dishModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('dishModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+      activeDishInModal = null;
+    }
+
+    function confirmOrderWhatsApp() {
+      if (!activeDishInModal) return;
+      const notes = document.getElementById('orderNotes').value.trim();
+      const extraMaduro = document.getElementById('sideExtraMaduro').checked;
+      const salsaLizano = document.getElementById('sideLizano').checked;
+
+      let extras = [];
+      if (extraMaduro) extras.push('Extra maduro con natilla (+₡700)');
+      if (salsaLizano) extras.push('Salsa Lizano aparte');
+
+      let text = `Hola Restaurante Las Delicias Tibás, deseo pedir: *${activeDishInModal.title}* (₡${parseInt(activeDishInModal.price).toLocaleString()}).`;
+      if (extras.length > 0) {
+        text += ` Acompañamientos: ${extras.join(', ')}.`;
+      }
+      if (notes) {
+        text += ` Instrucciones especiales: ${notes}`;
+      }
+      const url = `https://wa.me/50622369755?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+      closeModal();
+    }
+
+    document.getElementById('dishModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+
+    // Mobile Drawer Logic
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const mobileDrawerBackdrop = document.getElementById('mobileDrawerBackdrop');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileDrawerBackdrop.classList.remove('opacity-0', 'pointer-events-none');
+      mobileDrawerBackdrop.classList.add('opacity-100', 'pointer-events-auto');
+      mobileDrawer.classList.remove('translate-x-full');
+      mobileDrawer.classList.add('translate-x-0');
+      document.body.style.overflow = 'hidden';
+    });
+
+    function closeDrawer() {
+      mobileDrawerBackdrop.classList.add('opacity-0', 'pointer-events-none');
+      mobileDrawerBackdrop.classList.remove('opacity-100', 'pointer-events-auto');
+      mobileDrawer.classList.add('translate-x-full');
+      mobileDrawer.classList.remove('translate-x-0');
+      document.body.style.overflow = '';
+    }
+
+    closeDrawerBtn.addEventListener('click', closeDrawer);
+    mobileDrawerBackdrop.addEventListener('click', closeDrawer);
+  </script>
+</body>
+</html>
