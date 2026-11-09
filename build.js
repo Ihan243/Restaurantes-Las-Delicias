@@ -14,7 +14,7 @@ fs.mkdirSync(assets, { recursive: true });
 for (const page of pages) {
   fs.copyFileSync(path.join(root, page), path.join(output, page));
 }
-for (const asset of ["site-data.js", "menu-prices.js"]) {
+for (const asset of ["site-data.js", "menu-prices.js", "menu-oficial.pdf"]) {
   fs.copyFileSync(path.join(root, asset), path.join(output, asset));
 }
 fs.cpSync(path.join(root, "images"), path.join(output, "images"), { recursive: true });

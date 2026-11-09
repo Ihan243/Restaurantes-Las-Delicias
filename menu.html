@@ -62,18 +62,6 @@
   <script defer src="/site-data.js"></script>
   <script defer src="/menu-prices.js"></script>
   <style>.image-fallback{background-color:#efe5d8!important}</style>
-  <style media="print">
-    @page { size: A4; margin: 12mm; }
-    body { background: #fff !important; color: #222 !important; }
-    header, footer, aside, #mobileDrawer, #mobileDrawerBackdrop, .sticky, .print-hide,
-    a[href*="wa.me"], button { display: none !important; }
-    main { padding-top: 0 !important; min-height: 0 !important; }
-    main, main section, main div { box-shadow: none !important; }
-    main section { break-inside: auto; }
-    main .group { break-inside: avoid; }
-    main img { max-height: 55mm; object-fit: contain; }
-    main a { color: #222 !important; text-decoration: none !important; }
-  </style>
 </head>
 <body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
 
@@ -223,10 +211,10 @@
 
           <!-- Action Buttons -->
           <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm relative z-10 shrink-0 print-hide">
-            <button class="inline-flex items-center justify-center gap-space-xs px-5 py-2.5 rounded-lg bg-surface-container-lowest text-primary font-bold text-xs shadow-xs hover:bg-surface hover:shadow-md transition-all border border-outline-variant/30" onclick="printOfficialMenu()" type="button">
+            <a class="inline-flex items-center justify-center gap-space-xs px-5 py-2.5 rounded-lg bg-surface-container-lowest text-primary font-bold text-xs shadow-xs hover:bg-surface hover:shadow-md transition-all border border-outline-variant/30" href="/menu-oficial.pdf" download="menu-oficial-las-delicias.pdf">
               <span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
-              <span>Imprimir / Guardar como PDF</span>
-            </button>
+              <span>Descargar Menú Oficial (PDF)</span>
+            </a>
             <a class="inline-flex items-center justify-center gap-space-xs px-5 py-2.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs shadow-xs hover:bg-tertiary transition-all" href="buscador.html">
               <span class="material-symbols-outlined text-[18px]">search</span>
               <span>Buscador con Filtros</span>
@@ -912,14 +900,6 @@
 
     closeDrawerBtn.addEventListener('click', closeDrawer);
     mobileDrawerBackdrop.addEventListener('click', closeDrawer);
-  </script>
-  <script>
-    function printOfficialMenu() {
-      const originalTitle = document.title;
-      document.title = 'Menu Oficial - Restaurante Las Delicias';
-      window.addEventListener('afterprint', () => { document.title = originalTitle; }, { once: true });
-      window.print();
-    }
   </script>
 </body>
 </html>
