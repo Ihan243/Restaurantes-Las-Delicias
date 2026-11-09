@@ -58,7 +58,10 @@
   </style>
   
   <link rel="stylesheet" href="/assets/tailwind.generated.css"/>
-  <link rel="preload" as="image" href="https://lh3.googleusercontent.com/aida-public/AB6AXuBr-mskvYZgE4Q9pNkUt5PsUtl3Halt4jq4ZbxIItZlj9ELcnDeP5gtW9X_HaZ-SuVLnAZ1y9ls364ZlorUV2Lw2XRWNmQsovvTKxcdpW1Natpaz1E-GzOfM-LtYgxyVAvwy_ZQNu5XqssucvUv_bJ9pAQdmiySbtg-VylgOVkhRUC6LJqg74FyKxBUZajJ-RdCJOEPxDZ3TFR4zzb8g0MODJJHHr9Lhf4zP9tG2bF1" fetchpriority="high"/>
+  <link rel="preload" as="image" href="/images/dish-fa4b4293003b.webp" fetchpriority="high"/>
+  <script defer src="/site-data.js"></script>
+  <script defer src="/menu-prices.js"></script>
+  <style>.image-fallback{background-color:#efe5d8!important}</style>
 </head>
 <body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
 
@@ -68,15 +71,14 @@
       <!-- Logo & Branding -->
       <div class="flex items-center gap-space-md shrink-0">
         <a class="flex items-center gap-space-sm group" href="index.html">
-          <img alt="Restaurante Las Delicias Logo" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX" width="36" height="36" loading="eager" decoding="async" style="width:36px;height:36px;aspect-ratio:36/36;flex:none"/>
+          <img alt="Restaurante Las Delicias Logo" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" src="/images/dish-cc04bf996a00.webp" width="36" height="36" loading="eager" decoding="async" style="width:36px;height:36px;aspect-ratio:36/36;flex:none" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
           <div class="flex flex-col">
             <span class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors font-bold tracking-tight">Las Delicias</span>
             <span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider hidden sm:block">Sabor Típico • Tibás</span>
           </div>
         </a>
         <div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface">
-          <span class="font-label-sm text-label-sm font-bold text-tertiary-container">★ 4.2</span>
-          <span class="font-body-sm text-body-sm text-on-surface-variant">(1,200+ reseñas)</span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">TODO: confirmar calificación y cantidad de reseñas</span>
         </div>
       </div>
 
@@ -99,9 +101,9 @@
           <button class="px-2.5 py-1 rounded-full font-semibold text-on-surface-variant hover:text-on-surface transition-colors" type="button" onclick="alert('English version is coming soon! Our staff is bilingual and welcomes you warmly.')" title="Switch to English">EN</button>
         </div>
 
-        <a class="hidden 2xl:flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors shadow-xs" href="tel:+50622369755">
+        <a class="hidden 2xl:flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors shadow-xs" href="tel:+50622369755" data-site-phone>
           <span class="material-symbols-outlined text-[18px] text-primary">call</span>
-          <span>+506 2236 9755</span>
+          <span>Llamadas: +506 2236 9755</span>
         </a>
 
         <a class="hidden sm:inline-flex items-center gap-space-xs px-4 py-2 rounded-lg bg-primary text-on-primary font-semibold text-sm hover:bg-primary-container hover:text-on-primary transition-all shadow-[0_2px_6px_-1px_rgba(78,42,28,0.2)]" href="reservas.html">
@@ -123,7 +125,7 @@
     <div class="flex flex-col gap-space-md">
       <div class="flex items-center justify-between pb-space-sm border-b border-outline-variant/30">
         <div class="flex items-center gap-space-xs">
-          <img alt="Logo" class="h-7 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX" width="28" height="28" loading="lazy" fetchpriority="low" decoding="async" style="width:28px;height:28px;aspect-ratio:28/28;flex:none"/>
+          <img alt="Logo" class="h-7 w-auto" src="/images/dish-cc04bf996a00.webp" width="28" height="28" loading="lazy" fetchpriority="low" decoding="async" style="width:28px;height:28px;aspect-ratio:28/28;flex:none" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
           <span class="font-headline-sm text-title-lg font-bold text-primary">Las Delicias</span>
         </div>
         <button class="p-1 rounded-lg text-on-surface-variant hover:text-primary transition-colors" id="closeDrawerBtn" aria-label="Cerrar Menú">
@@ -164,13 +166,13 @@
     </div>
 
     <div class="flex flex-col gap-space-sm pt-space-md border-t border-outline-variant/30">
-      <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-lg bg-tertiary-container text-on-tertiary font-bold text-sm shadow-sm" href="https://wa.me/50663572479?text=Hola%20Restaurante%20Las%20Delicias,%20deseo%20ordenar%20platillos%20del%20menú" target="_blank" rel="noopener noreferrer">
+      <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-lg bg-tertiary-container text-on-tertiary font-bold text-sm shadow-sm" href="https://wa.me/50663572479?text=Hola%20Restaurante%20Las%20Delicias,%20quiero%20ordenar%20platillos%20del%20menú" target="_blank" rel="noopener noreferrer">
         <span class="material-symbols-outlined text-[18px]">chat</span>
         <span>WhatsApp Directo</span>
       </a>
-      <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-lg bg-surface-container text-on-surface font-semibold text-sm hover:bg-surface-container-high transition-colors" href="tel:+50622369755">
+      <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-lg bg-surface-container text-on-surface font-semibold text-sm hover:bg-surface-container-high transition-colors" href="tel:+50622369755" data-site-phone>
         <span class="material-symbols-outlined text-[18px] text-primary">call</span>
-        <span>Llamar: +506 2236 9755</span>
+        <span>Llamadas: +506 2236 9755</span>
       </a>
     </div>
   </aside>
@@ -202,7 +204,7 @@
               </span>
               <span class="inline-flex items-center gap-1 font-semibold px-3 py-1 rounded-full bg-surface-container text-on-surface">
                 <span class="material-symbols-outlined text-[14px] text-primary">schedule</span> 
-                Cocina continua 7:00 AM – 7:00 PM
+                Lunes a sábado 7:00 AM – 7:00 PM · domingo 6:00 AM – 6:00 PM
               </span>
             </div>
           </div>
@@ -266,7 +268,7 @@
             <!-- Dish 1 -->
             <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
               <div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container" style="aspect-ratio:4/3">
-                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Gallo Pinto Especial" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr-mskvYZgE4Q9pNkUt5PsUtl3Halt4jq4ZbxIItZlj9ELcnDeP5gtW9X_HaZ-SuVLnAZ1y9ls364ZlorUV2Lw2XRWNmQsovvTKxcdpW1Natpaz1E-GzOfM-LtYgxyVAvwy_ZQNu5XqssucvUv_bJ9pAQdmiySbtg-VylgOVkhRUC6LJqg74FyKxBUZajJ-RdCJOEPxDZ3TFR4zzb8g0MODJJHHr9Lhf4zP9tG2bF1" width="1200" height="900" loading="eager" decoding="async" fetchpriority="high"/>
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Gallo Pinto Especial" src="/images/dish-fa4b4293003b.webp" width="1200" height="900" loading="eager" decoding="async" fetchpriority="high" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
                 <span class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary font-bold text-xs px-3 py-1 rounded-full shadow-sm">Favorito del Valle</span>
                 <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
                   <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 15 min
@@ -284,7 +286,7 @@
                 </div>
                 <div class="pt-space-sm flex items-center justify-between gap-space-sm border-t border-outline-variant/20">
                   <span class="text-xs text-on-surface-variant font-medium">Incluye café chorreado</span>
-                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479?text=Hola,%20deseo%20ordenar%20el%20Gallo%20Pinto%20Especial%20Las%20Delicias%20(CRC%205,200)" rel="noopener noreferrer" target="_blank">
+                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479" data-menu-price-key="menu-gallo-pinto-especial-las-delicias" rel="noopener noreferrer" target="_blank">
                     <span class="material-symbols-outlined text-[16px]">chat</span>
                     <span>Pedir al WhatsApp</span>
                   </a>
@@ -295,7 +297,7 @@
             <!-- Dish 2 -->
             <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
               <div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container" style="aspect-ratio:4/3">
-                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Desayuno Tico Campesino" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4qZND7YrOuxmnbBLU8v-YesYlAFDTg9FWjEjElRL8wU_76_7N09uTPzZhQANQgptchr-XDyTP6NhPcuYfBDfu8H329Y7qTfs6-0pZ-sqUIxPiAbuL0jopISdFpNFpOBx5m3xfJi-X-0WGSg1KgDI58HNzewQfaNluN9izxOZ7pDnnLGlU1IfOHt2m3wGZa0SlAjwIwSoBF73tlx-xCNZZrdZNkklBu06GReHVyXUY" width="1200" height="900" loading="eager" decoding="async"/>
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Desayuno Tico Campesino" src="/images/dish-75606c8efacb.webp" width="1200" height="900" loading="eager" decoding="async" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
                 <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
                   <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 12 min
                 </div>
@@ -312,7 +314,7 @@
                 </div>
                 <div class="pt-space-sm flex items-center justify-between gap-space-sm border-t border-outline-variant/20">
                   <span class="text-xs text-on-surface-variant font-medium">Opción natilla sin sal</span>
-                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479?text=Hola,%20deseo%20ordenar%20el%20Desayuno%20Tico%20Campesino%20(CRC%205,000)" rel="noopener noreferrer" target="_blank">
+                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479" data-menu-price-key="menu-desayuno-tico-campesino" rel="noopener noreferrer" target="_blank">
                     <span class="material-symbols-outlined text-[16px]">chat</span>
                     <span>Pedir al WhatsApp</span>
                   </a>
@@ -323,7 +325,7 @@
             <!-- Dish 3 -->
             <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
               <div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container" style="aspect-ratio:4/3">
-                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Tortilla Aliñada" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBulIbpB5SF-lLgPTJQ-RjDEQL5CNd0BhgocRw8VJOnZN3xoYmzSrNXSndRDKNF_bhbLCT9JLqD4yLHuIMJjq6tJe-SxGCW8XyUnbg79rmC-XjP82u_3XxZgUpmkNb_lKT5lQND7983ZNSl8vAWJPiLx8GE0sHYsG7Y-6potutLSzxOnoLmagOoh-HhDwnuL5cazBjJljG4e5HT-t-vF_njjTsy6Rm2JBE9q1ZfoyEh" width="1200" height="900" loading="eager" decoding="async"/>
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Tortilla Aliñada" src="/images/dish-f63cf97de1af.webp" width="1200" height="900" loading="eager" decoding="async" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
                 <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
                   <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 15 min
                 </div>
@@ -340,7 +342,7 @@
                 </div>
                 <div class="pt-space-sm flex items-center justify-between gap-space-sm border-t border-outline-variant/20">
                   <span class="text-xs text-on-surface-variant font-medium">Receta Guanacasteca</span>
-                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479?text=Hola,%20deseo%20ordenar%20la%20Tortilla%20Aliñada%20con%20Carne%20Mechada%20(CRC%205,400)" rel="noopener noreferrer" target="_blank">
+                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479" data-menu-price-key="menu-tortilla-alinada-con-carne-mechada" rel="noopener noreferrer" target="_blank">
                     <span class="material-symbols-outlined text-[16px]">chat</span>
                     <span>Pedir al WhatsApp</span>
                   </a>
@@ -366,7 +368,7 @@
             <!-- Casado 1 -->
             <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
               <div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container" style="aspect-ratio:4/3">
-                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Bistec Encebollado" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz9TzhmKUguMPz_5LD8BK81ST4rI4E87T1f8CV2ATFT03ZYGBuTScf_8XXMjkzuDwLjKNCq4G7Y7EfT9UPTwuwUvtWzpzTPfAPIFthXouDjR3B0UFYym83k-WhND6S9HjIox3ftLnmwSLV9Or58Uxb4RM2XvlS6MpSb2ciAdMRjZynataPB2oTOwuO01__pSFcy_kHObVQuMCacCSdDS6T5anzjBF9WPlsQV77u2Oh" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async"/>
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Bistec Encebollado" src="/images/dish-3329f77cc8a6.webp" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
                 <span class="absolute top-3 left-3 bg-primary text-on-primary font-bold text-xs px-2.5 py-1 rounded-full shadow-sm">Clásico Nº 1</span>
                 <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
                   <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 15-20 min
@@ -384,7 +386,7 @@
                 </div>
                 <div class="pt-space-xs flex flex-col gap-1 border-t border-outline-variant/20">
                   <span class="text-xs text-tertiary font-semibold">Incluye refresco natural del día</span>
-                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479?text=Hola,%20deseo%20ordenar%20el%20Casado%20con%20Bistec%20Encebollado%20(CRC%206,200)" rel="noopener noreferrer" target="_blank">
+                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479" data-menu-price-key="menu-casado-con-bistec-encebollado" rel="noopener noreferrer" target="_blank">
                     <span class="material-symbols-outlined text-[16px]">chat</span>
                     <span>Pedir por WhatsApp</span>
                   </a>
@@ -395,7 +397,7 @@
             <!-- Casado 2 -->
             <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
               <div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container" style="aspect-ratio:4/3">
-                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Filete de Pescado" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuMLE88och2IWireL7tWgRRRxB_LlirEq0WyUqicbIdAjPJ5JFKYNMswrI2QekQEu6pIQO0j8TPe--tYUA89DJPStLsuKNVHgus3B0hschqmD02YCrhhTti2elmPT8DgDa5x-o550tG-1R-vWa9fDKEq9f34pMvOUuufCrO-nVEfZJS_KnGdFq89Y1E27nNiS1U_ROW7Je3IpPR9EZJzZoe8E0wDeaH8mLv6qvPNCT" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async"/>
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Filete de Pescado" src="/images/dish-45e517ba80bf.webp" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
                 <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
                   <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 18 min
                 </div>
@@ -412,7 +414,7 @@
                 </div>
                 <div class="pt-space-xs flex flex-col gap-1 border-t border-outline-variant/20">
                   <span class="text-xs text-tertiary font-semibold">Al ajillo o a la plancha</span>
-                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479?text=Hola,%20deseo%20ordenar%20el%20Casado%20con%20Filete%20de%20Pescado%20(CRC%206,800)" rel="noopener noreferrer" target="_blank">
+                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479" data-menu-price-key="menu-casado-con-filete-de-pescado" rel="noopener noreferrer" target="_blank">
                     <span class="material-symbols-outlined text-[16px]">chat</span>
                     <span>Pedir por WhatsApp</span>
                   </a>
@@ -423,7 +425,7 @@
             <!-- Casado 3 -->
             <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
               <div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container" style="aspect-ratio:4/3">
-                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Chuleta Ahumada" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiZ_ydUsIUKX1U4Z1ZYDqnxZHF-0JbXPGQwfQ3lBLwdEycQyLBYoST-oOR6ED8ZICE_xZHmtd_M7HccY5-rK7FUnUt3QuL8OH_P-8dG5sCN7FT2r185EIV4L9s3lCMt4zzlZq4wiPCTXrTbbbf3199zI4Aya2sr4uwbLx76b_-RHiNL-JQ32IjFFWMwJfj6ZnhfkmHGqlMR80u7J02bEJoQO1eXvEVZUFVLxPFhw2V" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async"/>
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Chuleta Ahumada" src="/images/dish-f43f3e020abc.webp" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
                 <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
                   <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 15 min
                 </div>
@@ -440,7 +442,7 @@
                 </div>
                 <div class="pt-space-xs flex flex-col gap-1 border-t border-outline-variant/20">
                   <span class="text-xs text-tertiary font-semibold">Ahumado artesanal casero</span>
-                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479?text=Hola,%20deseo%20ordenar%20el%20Casado%20con%20Chuleta%20Ahumada%20(CRC%206,400)" rel="noopener noreferrer" target="_blank">
+                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479" data-menu-price-key="menu-casado-con-chuleta-ahumada" rel="noopener noreferrer" target="_blank">
                     <span class="material-symbols-outlined text-[16px]">chat</span>
                     <span>Pedir por WhatsApp</span>
                   </a>
@@ -451,7 +453,7 @@
             <!-- Casado 4 -->
             <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
               <div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container" style="aspect-ratio:4/3">
-                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Casado Vegetariano" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB37-eK3A7l7NDQBIrJu1hf4Y8W214QnhJLBzWi4gd1P9pqmXUxQs0NyPKnU-no1k1PnKdoo3ddemvc3-3AP7REneDm_6046A6IUPkjrX2_mnzvGFM2ieWJA1PiAfrFvUQ-gkcuYKo-6plfsRgerzOk1w4vSdvpB4nejwZ1ThPHyD5XCVzyvUm7uUEajcYq0XI2kanRdZsp-UulQQ0FUiLJa7fSvCygTQTF1nQF7HHB" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async"/>
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Casado Vegetariano" src="/images/dish-4ab5910f3673.webp" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
                 <span class="absolute top-3 left-3 bg-surface-container-high text-on-surface font-bold text-xs px-2.5 py-1 rounded-full shadow-sm">Vegetariano</span>
                 <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
                   <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 12 min
@@ -469,7 +471,7 @@
                 </div>
                 <div class="pt-space-xs flex flex-col gap-1 border-t border-outline-variant/20">
                   <span class="text-xs text-emerald-700 font-semibold">100% libre de carnes</span>
-                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479?text=Hola,%20deseo%20ordenar%20el%20Casado%20Vegetariano%20(CRC%205,500)" rel="noopener noreferrer" target="_blank">
+                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479" data-menu-price-key="menu-casado-vegetariano" rel="noopener noreferrer" target="_blank">
                     <span class="material-symbols-outlined text-[16px]">chat</span>
                     <span>Pedir por WhatsApp</span>
                   </a>
@@ -504,7 +506,7 @@
                 </div>
               </div>
               <div class="pt-space-sm flex items-center gap-space-sm">
-                <a class="inline-flex items-center gap-space-xs px-6 py-3 rounded-xl bg-on-tertiary-container text-on-tertiary-fixed font-bold text-sm shadow-lg hover:brightness-105 transition-all" href="https://wa.me/50663572479?text=Hola,%20deseo%20ordenar%20la%20Olla%20de%20Carne%20Tradicional%20(CRC%207,500)" rel="noopener noreferrer" target="_blank">
+                <a class="inline-flex items-center gap-space-xs px-6 py-3 rounded-xl bg-on-tertiary-container text-on-tertiary-fixed font-bold text-sm shadow-lg hover:brightness-105 transition-all" href="https://wa.me/50663572479" data-menu-price-key="menu-olla-de-carne-tradicional" rel="noopener noreferrer" target="_blank">
                   <span class="material-symbols-outlined text-[20px]">restaurant</span>
                   <span>Pedir Olla de Carne por WhatsApp</span>
                 </a>
@@ -512,7 +514,7 @@
             </div>
             <div class="lg:col-span-5 relative">
               <div class="aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl bg-surface-container border-2 border-white/20">
-                <img class="w-full h-full object-cover" alt="Olla de Carne Tradicional" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlmrKpUZNlnsuzR-qHZf2-RkVfKloUOQLgBfkyE_rSgGHrSe0xxKdOL2JS4cayK1s7aCRTUhEJFXGpL0_lVtspgCfp_TX4Ov0lWqjGD_wp_0vZYhPbhPEkV-2bv0qqFgfHyPfju820Wlaxi__LbwOIZQJyq-9cQUt9qlFs3FEMYPYaTvlOoMRLG3lfX1rJqO3GaO7rzKX85hC3dc1j2qwTneIzYYIBZTWEFPS2lGRj" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async"/>
+                <img class="w-full h-full object-cover" alt="Olla de Carne Tradicional" src="/images/dish-c8e3169eaffd.webp" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
               </div>
             </div>
           </div>
@@ -529,7 +531,7 @@
             <!-- Dish: Chifrijo Abundante -->
             <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
               <div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container" style="aspect-ratio:4/3">
-                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Chifrijo Abundante" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZcIBoBMuVwZVZIA-MC_P5cPa_9Ickf8l4hXSvCnoH9Bq2h9BzDC8vy2HImSPiHGZGH3VAVddhRMWYhen2yhHgewpKJJWe4T0nh0BAZIRLTEkrZQCfJktn7F42YvXyAz2rpWRP1P-LIv3DT58MV2yAk2SRHTAeKSeMSHmVD9hGXoSUlw_DSosC9_GwZiiGnFBhEDpWmsDfsma22LOKA1OcAZ_c214dUAmfgKOoOjn9" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async"/>
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Chifrijo Abundante" src="/images/dish-758189eb677e.webp" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
                 <span class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary font-bold text-xs px-3 py-1 rounded-full shadow-sm">El Más Pedido</span>
                 <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
                   <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 12 min
@@ -547,7 +549,7 @@
                 </div>
                 <div class="pt-space-sm flex items-center justify-between gap-space-sm border-t border-outline-variant/20">
                   <span class="text-xs text-on-surface-variant font-medium">Con chimichurri casero</span>
-                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479?text=Hola,%20deseo%20ordenar%20el%20Chifrijo%20Abundante%20(CRC%206,500)" rel="noopener noreferrer" target="_blank">
+                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479" data-menu-price-key="menu-chifrijo-abundante" rel="noopener noreferrer" target="_blank">
                     <span class="material-symbols-outlined text-[16px]">chat</span>
                     <span>Pedir al WhatsApp</span>
                   </a>
@@ -558,7 +560,7 @@
             <!-- Dish: Arroz con Pollo Criollo -->
             <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
               <div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container" style="aspect-ratio:4/3">
-                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Arroz con Pollo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhRQ7fbqzGlT2OufpmontURcmOcwp-AT8DrF6oTm8RLFjM-5X9S4oPgf3wxy3aBjZ1Rs7HkodHFr_LsE82KQav-6DK8ZZ8YsouWP3ytN4WAnoF5WcltaP4xVqFkoLCpBWl7sAIn55sRaAxfy7APPgOwoLQUjsxwcgCcOvewur7ODGglGgeQzz0Se0nTxJPslMapWnXOj92-Y8LxcN7vxmHDDSJsMyXVESaSUO1jyng" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async"/>
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Arroz con Pollo" src="/images/dish-65955bfa71a7.webp" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
                 <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
                   <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 15 min
                 </div>
@@ -575,7 +577,7 @@
                 </div>
                 <div class="pt-space-sm flex items-center justify-between gap-space-sm border-t border-outline-variant/20">
                   <span class="text-xs text-on-surface-variant font-medium">Salsa Lizano a la mesa</span>
-                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479?text=Hola,%20deseo%20ordenar%20el%20Arroz%20con%20Pollo%20Criollo%20(CRC%205,800)" rel="noopener noreferrer" target="_blank">
+                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479" data-menu-price-key="menu-arroz-con-pollo-criollo" rel="noopener noreferrer" target="_blank">
                     <span class="material-symbols-outlined text-[16px]">chat</span>
                     <span>Pedir al WhatsApp</span>
                   </a>
@@ -586,7 +588,7 @@
             <!-- Dish: Fajitas Mixtas al Sartén -->
             <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
               <div class="relative aspect-[4/3] w-full overflow-hidden bg-surface-container" style="aspect-ratio:4/3">
-                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Fajitas Mixtas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlPWXrFQv9XX1s0iADhTaeBqPpFJ131unAhYrTJfTRiJEwGuiQsAnNBvnfxQPHE057j2-q36zKYzD8cLq9MhBkcuVLXXAVm6vLizoflVkGTkllik9PfjHGyEHORE5hzCb2KEcaD5tbfaYzws14uLBUZ9yFlG_aD092PY7wVBOhNIGg3SLkVyPqTLHAg0sRpbZoP7GazMjnzDHdeHdLgZ1enzSu4YHjBLP4jTlAY-D0" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async"/>
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Fajitas Mixtas" src="/images/dish-353759d8e973.webp" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
                 <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
                   <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 20 min
                 </div>
@@ -603,7 +605,7 @@
                 </div>
                 <div class="pt-space-sm flex items-center justify-between gap-space-sm border-t border-outline-variant/20">
                   <span class="text-xs text-on-surface-variant font-medium">Ideal para compartir</span>
-                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479?text=Hola,%20deseo%20ordenar%20las%20Fajitas%20Mixtas%20(CRC%208,500)" rel="noopener noreferrer" target="_blank">
+                  <a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479" data-menu-price-key="menu-fajitas-mixtas" rel="noopener noreferrer" target="_blank">
                     <span class="material-symbols-outlined text-[16px]">chat</span>
                     <span>Pedir al WhatsApp</span>
                   </a>
@@ -677,7 +679,7 @@
                 </div>
               </div>
 
-              <a class="mt-2 inline-flex items-center justify-center gap-space-xs px-4 py-2.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479?text=Hola,%20deseo%20ordenar%20bebidas%20naturales%20o%20café%20chorreado" rel="noopener noreferrer" target="_blank">
+              <a class="mt-2 inline-flex items-center justify-center gap-space-xs px-4 py-2.5 rounded-lg bg-tertiary-container text-on-tertiary font-bold text-xs hover:bg-tertiary transition-colors shadow-xs" href="https://wa.me/50663572479?text=Hola,%20quiero%20ordenar%20bebidas%20naturales%20o%20café%20chorreado" rel="noopener noreferrer" target="_blank">
                 <span class="material-symbols-outlined text-[18px]">chat</span>
                 <span>Pedir Bebidas por WhatsApp</span>
               </a>
@@ -688,7 +690,7 @@
               <!-- Postre 1 -->
               <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
                 <div class="relative h-44 w-full overflow-hidden bg-surface-container">
-                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Chancletas Caseras" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBff9o8tKG9oxbKz_kNoa69_8lmK63puEplDi6YIPrPKD3Tw_thohpyHzZACnMldBUBUH_R0prHvtp8P9pRvovB8yD0VHyAMCp7mVzrS_T6JjJcFkAJ5Dfju7FNLYpXF3RIfS5vZ4fJ2mERdtyrTgjLyquC63KNZq_ty4Sxfhpeggf1R2NIyVjqfQd1fMd6k9x2VCKLyGzZuKvMTlqC4FXp79agQpyizGXCHL2Sqjdp" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async"/>
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Chancletas Caseras" src="/images/dish-e13a4262af10.webp" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
                   <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
                     <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> 10 min
                   </div>
@@ -703,7 +705,7 @@
                       Receta colonial: cáscara de chayote rellena con puré dulce, canela en rama, pasas maceradas y queso tierno gratinado al horno.
                     </p>
                   </div>
-                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://wa.me/50663572479?text=Hola,%20deseo%20ordenar%20Chancletas%20Caseras%20(CRC%202,800)" rel="noopener noreferrer" target="_blank">
+                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://wa.me/50663572479" data-menu-price-key="menu-chancletas-caseras" rel="noopener noreferrer" target="_blank">
                     <span class="material-symbols-outlined text-[16px] text-tertiary-container">chat</span>
                     <span>Pedir Chancletas</span>
                   </a>
@@ -713,7 +715,7 @@
               <!-- Postre 2 -->
               <article class="flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-outline-variant/20">
                 <div class="relative h-44 w-full overflow-hidden bg-surface-container">
-                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Arroz con Leche" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAhExfLvxxNyH9DdjfZ8SiNYPCDNDQKsO7bSCsRR6LsJdKOP0DtjKeKj-CRM1w_Yn_brP-ntDCM0nKR2cZjXnSXrLBDT-vrEpPPgF7GPmTDPzd7y6XmeMm996U6Pu8_hyeP9DLHvY4dA3cZNrCgGic8Y55gqwcC5ZQMfJZ66_QtBViOJXFUfkMYvsixPykkQcPUHGCEdto-NEpZMHCfs6A4Tymqdtn7PonpL_E2V7b" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async"/>
+                  <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Arroz con Leche" src="/images/dish-8d207002240f.webp" width="1200" height="900" loading="lazy" fetchpriority="low" decoding="async" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
                   <div class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded font-semibold text-xs text-on-surface flex items-center gap-1 shadow-xs">
                     <span class="material-symbols-outlined text-[14px] text-tertiary-container">schedule</span> Listo
                   </div>
@@ -728,7 +730,7 @@
                       Cocinado a fuego lento con tres leches, cáscara de limón agrio, clavo de olor, pasas y abundante canela molida espolvoreada.
                     </p>
                   </div>
-                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://wa.me/50663572479?text=Hola,%20deseo%20ordenar%20el%20Arroz%20con%20Leche%20(CRC%202,500)" rel="noopener noreferrer" target="_blank">
+                  <a class="w-full inline-flex items-center justify-center gap-1 py-2 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://wa.me/50663572479" data-menu-price-key="menu-arroz-con-leche" rel="noopener noreferrer" target="_blank">
                     <span class="material-symbols-outlined text-[16px] text-tertiary-container">chat</span>
                     <span>Pedir Arroz con Leche</span>
                   </a>
@@ -779,7 +781,7 @@
 
   <!-- FLOATING WHATSAPP ACTION BUTTON -->
   <aside class="fixed bottom-space-lg right-space-lg z-40 flex flex-col items-end gap-space-xs">
-    <a aria-label="WhatsApp Restaurante Las Delicias" class="group flex items-center gap-space-sm pl-space-md pr-space-sm py-space-sm rounded-full bg-tertiary-container text-on-tertiary shadow-[0_8px_20px_-3px_rgba(78,42,28,0.25)] hover:bg-tertiary transition-all duration-300 transform hover:-translate-y-0.5" href="https://wa.me/50663572479?text=Hola%20Restaurante%20Las%20Delicias,%20deseo%20hacer%20un%20pedido%20del%20menú" rel="noopener noreferrer" target="_blank">
+    <a aria-label="WhatsApp Restaurante Las Delicias" class="group flex items-center gap-space-sm pl-space-md pr-space-sm py-space-sm rounded-full bg-tertiary-container text-on-tertiary shadow-[0_8px_20px_-3px_rgba(78,42,28,0.25)] hover:bg-tertiary transition-all duration-300 transform hover:-translate-y-0.5" href="https://wa.me/50663572479?text=Hola%20Restaurante%20Las%20Delicias,%20quiero%20hacer%20un%20pedido%20del%20menú" rel="noopener noreferrer" target="_blank">
       <span class="hidden md:inline font-bold text-xs text-on-tertiary">¡Pedí por WhatsApp!</span>
       <div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-tertiary-container shadow-inner">
         <span class="material-symbols-outlined text-[24px]">chat</span>
@@ -793,12 +795,13 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl">
         <div class="flex flex-col gap-space-sm">
           <div class="flex items-center gap-space-sm">
-            <img alt="Restaurante Las Delicias Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX" width="32" height="32" loading="lazy" fetchpriority="low" decoding="async" style="width:32px;height:32px;aspect-ratio:32/32;flex:none"/>
+            <img alt="Restaurante Las Delicias Logo" class="h-8 w-auto object-contain" src="/images/dish-cc04bf996a00.webp" width="32" height="32" loading="lazy" fetchpriority="low" decoding="async" style="width:32px;height:32px;aspect-ratio:32/32;flex:none" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
             <span class="font-headline-sm text-lg font-bold text-primary">Las Delicias</span>
           </div>
           <p class="text-xs text-on-surface-variant leading-relaxed">
-            Auténtica gastronomía costarricense con más de 30 años llevando a su mesa el sazón casero, tortillas palmeadas y el calor de hogar en el corazón de Tibás.
+            Auténtica gastronomía costarricense con más de 30 años llevando a tu mesa el sazón casero, tortillas palmeadas y el calor de hogar en el corazón de Tibás.
           </p>
+          <p class="text-xs text-on-surface-variant mt-1">TODO: confirmar un precio único para platillos repetidos entre menú y buscador antes de publicar.</p>
         </div>
 
         <div class="flex flex-col gap-space-sm">
@@ -808,11 +811,11 @@
             <span>Donde La Chinita, 25 metros sur del Restaurante Los Antojitos, diagonal sur, San Juan de Tibás, San José, Costa Rica</span>
           </div>
           <div class="flex flex-wrap gap-space-xs mt-space-xs">
-            <a class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://maps.app.goo.gl/wk6xeKJjS4p1Vvyk6" target="_blank" rel="noopener noreferrer">
+            <a class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante%20Las%20Delicias%20San%20Juan%20de%20Tib%C3%A1s%20Costa%20Rica" target="_blank" rel="noopener noreferrer" data-site-maps>
               <span class="material-symbols-outlined text-[16px] text-primary">map</span>
               <span>Google Maps</span>
             </a>
-            <a class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://waze.com/ul?q=Restaurante+Las+Delicias+Tibas" target="_blank" rel="noopener noreferrer">
+            <a class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://waze.com/ul?q=Restaurante%20Las%20Delicias%20San%20Juan%20de%20Tib%C3%A1s%20Costa%20Rica" target="_blank" rel="noopener noreferrer" data-site-waze>
               <span class="material-symbols-outlined text-[16px] text-tertiary">navigation</span>
               <span>Waze</span>
             </a>
@@ -821,7 +824,7 @@
 
         <div class="flex flex-col gap-space-sm">
           <h3 class="font-bold text-base text-primary">Horario de Atención</h3>
-          <ul class="flex flex-col gap-space-xs text-xs text-on-surface-variant">
+          <ul data-hours-list="true" class="flex flex-col gap-space-xs text-xs text-on-surface-variant">
             <li class="flex justify-between items-center py-0.5">
               <span class="font-semibold text-on-surface">Lunes a Sábado:</span>
               <span>7:00 AM – 7:00 PM</span>
@@ -845,7 +848,7 @@
       </div>
 
       <div class="pt-space-lg border-t border-outline-variant/20 flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant text-xs">
-        <p>© 2025 Restaurante Las Delicias. Todos los derechos reservados. San Juan de Tibás, Costa Rica.</p>
+        <p>© <span data-current-year></span> Restaurante Las Delicias. Todos los derechos reservados. San Juan de Tibás, Costa Rica.</p>
         <p>Precios con 13% IVA y 10% servicio incluidos.</p>
       </div>
     </div>

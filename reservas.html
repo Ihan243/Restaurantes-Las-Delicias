@@ -5,7 +5,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="web_standard" name="shell-type"/>
   <title>Reservas &amp; Contacto | Restaurante Las Delicias Tibás</title>
-  <meta name="description" content="Reserve su mesa en Restaurante Las Delicias en San Juan de Tibás. Almuerzos familiares, celebraciones, eventos de empresa y pedidos anticipados para llevar. Teléfono y WhatsApp directo."/>
+  <meta name="description" content="Reserve tu mesa en Restaurante Las Delicias en San Juan de Tibás. Almuerzos familiares, celebraciones, eventos de empresa y pedidos anticipados para llevar. Teléfono y WhatsApp directo."/>
   
   <!-- Google Fonts Preconnect & Stylesheet -->
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -55,6 +55,9 @@
   </style>
   
   <link rel="stylesheet" href="/assets/tailwind.generated.css"/>
+  <script defer src="/site-data.js"></script>
+  <script defer src="/menu-prices.js"></script>
+  <style>.image-fallback{background-color:#efe5d8!important}</style>
 </head>
 <body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
 
@@ -64,15 +67,14 @@
       <!-- Logo & Branding -->
       <div class="flex items-center gap-space-md shrink-0">
         <a class="flex items-center gap-space-sm group" href="index.html">
-          <img alt="Restaurante Las Delicias Logo" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX" width="36" height="36" loading="eager" decoding="async" style="width:36px;height:36px;aspect-ratio:36/36;flex:none"/>
+          <img alt="Restaurante Las Delicias Logo" class="h-9 w-auto object-contain transition-transform group-hover:scale-105" src="/images/dish-cc04bf996a00.webp" width="36" height="36" loading="eager" decoding="async" style="width:36px;height:36px;aspect-ratio:36/36;flex:none" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
           <div class="flex flex-col">
             <span class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors font-bold tracking-tight">Las Delicias</span>
             <span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider hidden sm:block">Sabor Típico • Tibás</span>
           </div>
         </a>
         <div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface">
-          <span class="font-label-sm text-label-sm font-bold text-tertiary-container">★ 4.2</span>
-          <span class="font-body-sm text-body-sm text-on-surface-variant">(1,200+ reseñas)</span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">TODO: confirmar calificación y cantidad de reseñas</span>
         </div>
       </div>
 
@@ -94,9 +96,9 @@
           <button class="px-2.5 py-1 rounded-full font-semibold text-on-surface-variant hover:text-on-surface transition-colors" type="button" onclick="alert('English version is coming soon! Our staff is bilingual and welcomes you warmly.')" title="Switch to English">EN</button>
         </div>
 
-        <a class="hidden 2xl:flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors shadow-xs" href="tel:+50622369755">
+        <a class="hidden 2xl:flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container hover:text-on-surface transition-colors shadow-xs" href="tel:+50622369755" data-site-phone>
           <span class="material-symbols-outlined text-[18px] text-primary">call</span>
-          <span>+506 2236 9755</span>
+          <span>Llamadas: +506 2236 9755</span>
         </a>
 
         <a class="hidden sm:inline-flex items-center gap-space-xs px-4 py-2 rounded-lg bg-primary text-on-primary font-semibold text-sm hover:bg-primary-container hover:text-on-primary transition-all shadow-[0_2px_6px_-1px_rgba(78,42,28,0.2)]" href="reservas.html">
@@ -118,7 +120,7 @@
     <div class="flex flex-col gap-space-md">
       <div class="flex items-center justify-between pb-space-sm border-b border-outline-variant/30">
         <div class="flex items-center gap-space-xs">
-          <img alt="Logo" class="h-7 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX" width="28" height="28" loading="lazy" fetchpriority="low" decoding="async" style="width:28px;height:28px;aspect-ratio:28/28;flex:none"/>
+          <img alt="Logo" class="h-7 w-auto" src="/images/dish-cc04bf996a00.webp" width="28" height="28" loading="lazy" fetchpriority="low" decoding="async" style="width:28px;height:28px;aspect-ratio:28/28;flex:none" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
           <span class="font-headline-sm text-title-lg font-bold text-primary">Las Delicias</span>
         </div>
         <button class="p-1 rounded-lg text-on-surface-variant hover:text-primary transition-colors" id="closeDrawerBtn" aria-label="Cerrar Menú">
@@ -159,13 +161,13 @@
     </div>
 
     <div class="flex flex-col gap-space-sm pt-space-md border-t border-outline-variant/30">
-      <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-lg bg-tertiary-container text-on-tertiary font-bold text-sm shadow-sm" href="https://wa.me/50663572479?text=Hola%20Restaurante%20Las%20Delicias,%20deseo%20hacer%20un%20pedido%20o%20reserva" target="_blank" rel="noopener noreferrer">
+      <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-lg bg-tertiary-container text-on-tertiary font-bold text-sm shadow-sm" href="https://wa.me/50663572479?text=Hola%20Restaurante%20Las%20Delicias,%20quiero%20hacer%20un%20pedido%20o%20reserva" target="_blank" rel="noopener noreferrer">
         <span class="material-symbols-outlined text-[18px]">chat</span>
         <span>WhatsApp Directo</span>
       </a>
-      <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-lg bg-surface-container text-on-surface font-semibold text-sm hover:bg-surface-container-high transition-colors" href="tel:+50622369755">
+      <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-lg bg-surface-container text-on-surface font-semibold text-sm hover:bg-surface-container-high transition-colors" href="tel:+50622369755" data-site-phone>
         <span class="material-symbols-outlined text-[18px] text-primary">call</span>
-        <span>Llamar: +506 2236 9755</span>
+        <span>Llamadas: +506 2236 9755</span>
       </a>
     </div>
   </aside>
@@ -185,7 +187,7 @@
                 <span>Mesa Reservada • Sabor Familiar</span>
               </div>
               <h1 class="font-headline-lg text-3xl sm:text-4xl text-primary font-bold tracking-tight">
-                Reserve su Mesa &amp; Visítenos en Tibás
+                Reservá tu mesa y visitanos en Tibás
               </h1>
               <p class="text-sm sm:text-base text-on-surface-variant mt-1 leading-relaxed">
                 Asegure el calor de nuestro comedor típico para almuerzos familiares, celebraciones de oficina o pedidos caseros con antelación.
@@ -200,7 +202,7 @@
                 <span class="block text-xs text-tertiary font-bold uppercase tracking-wider">Estado Actual</span>
                 <div class="flex items-center gap-space-xs">
                   <span class="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-pulse"></span>
-                  <span class="font-bold text-sm text-on-surface">Abierto Hoy hasta 7:00 PM</span>
+                  <span class="font-bold text-sm text-on-surface"><span data-open-status>Consultando horario…</span></span>
                 </div>
                 <span class="text-xs text-on-surface-variant">Desayunos típicos y cazuelas recién hechas</span>
               </div>
@@ -351,16 +353,10 @@
                       <span class="material-symbols-outlined text-[20px]">send</span>
                       <span>Enviar Solicitud de Reserva</span>
                     </button>
-                    <a class="flex-1 inline-flex items-center justify-center gap-space-xs px-5 py-3 rounded-xl bg-tertiary-container text-on-tertiary font-bold text-xs sm:text-sm hover:bg-tertiary shadow-md transition-all active:scale-[0.99]" href="https://wa.me/50663572479?text=Hola%20Restaurante%20Las%20Delicias,%20deseo%20reservar%20una%20mesa" id="btnWhatsappDirect" rel="noopener noreferrer" target="_blank">
+                    <a class="flex-1 inline-flex items-center justify-center gap-space-xs px-5 py-3 rounded-xl bg-tertiary-container text-on-tertiary font-bold text-xs sm:text-sm hover:bg-tertiary shadow-md transition-all active:scale-[0.99]" href="https://wa.me/50663572479?text=Hola%20Restaurante%20Las%20Delicias,%20quiero%20reservar%20una%20mesa" id="btnWhatsappDirect" rel="noopener noreferrer" target="_blank">
                       <span class="material-symbols-outlined text-[20px]">chat</span>
                       <span>Reservar Directo por WhatsApp</span>
                     </a>
-                  </div>
-
-                  <!-- Success Feedback Alert -->
-                  <div class="hidden p-space-md rounded-xl bg-emerald-50 text-emerald-900 border border-emerald-200 flex items-center gap-space-sm" id="formSuccessMessage">
-                    <span class="material-symbols-outlined text-emerald-600 text-[24px]">check_circle</span>
-                    <span class="text-xs font-semibold leading-relaxed">¡Solicitud recibida con éxito! Nuestro personal en Tibás se comunicará en breve vía llamada o WhatsApp para confirmar su reserva.</span>
                   </div>
                 </form>
               </div>
@@ -386,7 +382,7 @@
                   <div>
                     <h3 class="font-bold text-sm text-primary mb-1">Pedidos para Llevar</h3>
                     <p class="text-xs text-on-surface-variant leading-relaxed">
-                      Ordene por WhatsApp y retire sin fila sus casados, tamales o picadillos en empaques térmicos biodegradables.
+                      Pedí por WhatsApp y retirás sin fila tus casados, tamales o picadillos en empaques térmicos biodegradables.
                     </p>
                   </div>
                 </div>
@@ -411,11 +407,11 @@
                 </div>
 
                 <div class="grid grid-cols-2 gap-space-sm">
-                  <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-xl bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors shadow-xs text-center" href="https://maps.app.goo.gl/wk6xeKJjS4p1Vvyk6" rel="noopener noreferrer" target="_blank">
+                  <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-xl bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors shadow-xs text-center" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante%20Las%20Delicias%20San%20Juan%20de%20Tib%C3%A1s%20Costa%20Rica" rel="noopener noreferrer" target="_blank" data-site-maps>
                     <span class="material-symbols-outlined text-primary text-[18px]">map</span>
                     <span>Google Maps</span>
                   </a>
-                  <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-xl bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors shadow-xs text-center" href="https://waze.com/ul?q=Restaurante%20Las%20Delicias%20Tibas" rel="noopener noreferrer" target="_blank">
+                  <a class="flex items-center justify-center gap-space-xs py-2.5 px-space-md rounded-xl bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors shadow-xs text-center" href="https://waze.com/ul?q=Restaurante%20Las%20Delicias%20San%20Juan%20de%20Tib%C3%A1s%20Costa%20Rica" rel="noopener noreferrer" target="_blank" data-site-waze>
                     <span class="material-symbols-outlined text-tertiary text-[18px]">navigation</span>
                     <span>Abrir en Waze</span>
                   </a>
@@ -423,7 +419,7 @@
 
                 <!-- Map Photo Pipeline -->
                 <div class="relative w-full h-56 rounded-xl overflow-hidden shadow-inner group border border-outline-variant/20">
-                  <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105 bg-surface-container" data-lazy-bg="https://lh3.googleusercontent.com/aida-public/AB6AXuCIX29UsSTfbEOrl1r7hcYQayw4UEv_2ut2FgQ3Ce_4kS7wCg7HdZuRT52z_sdJa_OuK7wSai3eeoQvZxt1SfadS5cKBKrxJfneZb-G0RM1uLNqLcldjOcF70Fdomd17E6PeyJg4ajI3QYdt14ORhEf_8fhXJsYGr3aOGqCH1gi3EVx069hS7y3OTOnA4gBLpOzTrtxxTETiypJCDHv51HRzy72X4txcip_pkF-mtYp"></div>
+                  <div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105 bg-surface-container" data-lazy-bg="/images/dish-493f299fe9e1.webp"></div>
                   <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-space-md text-white">
                     <div class="flex items-center gap-space-xs mb-1">
                       <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
@@ -472,23 +468,22 @@
                 <h2 class="font-bold text-base text-primary">Canales Directos Oficiales</h2>
                 
                 <div class="flex flex-col gap-2">
-                  <a class="flex items-center gap-space-md p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors" href="tel:+50622369755">
+                  <a class="flex items-center gap-space-md p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors" href="tel:+50622369755" data-site-phone>
                     <div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary shrink-0">
                       <span class="material-symbols-outlined text-[20px]">call</span>
                     </div>
                     <div>
-                      <span class="block text-xs text-on-surface-variant font-medium">Línea Telefónica Directa</span>
+                      <span class="block text-xs text-on-surface-variant font-medium">Llamadas</span>
                       <span class="font-bold text-sm text-primary">+506 2236 9755</span>
                     </div>
                   </a>
-
-                  <a class="flex items-center gap-space-md p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors" href="mailto:contacto@restaurantelasdeliciascr.com">
-                    <div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary shrink-0">
-                      <span class="material-symbols-outlined text-[20px]">mail</span>
+                  <a class="flex items-center gap-space-md p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors" href="https://wa.me/50663572479" target="_blank" rel="noopener noreferrer">
+                    <div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary-container shrink-0">
+                      <span class="material-symbols-outlined text-[20px]">chat</span>
                     </div>
-                    <div class="min-w-0">
-                      <span class="block text-xs text-on-surface-variant font-medium">Correo Electrónico Oficial</span>
-                      <span class="text-xs font-bold text-primary truncate block">contacto@restaurantelasdeliciascr.com</span>
+                    <div>
+                      <span class="block text-xs text-on-surface-variant font-medium">WhatsApp</span>
+                      <span class="font-bold text-sm text-primary">+506 6357 2479</span>
                     </div>
                   </a>
                 </div>
@@ -524,7 +519,7 @@
 
   <!-- FLOATING WHATSAPP ACTION BUTTON -->
   <aside class="fixed bottom-space-lg right-space-lg z-40 flex flex-col items-end gap-space-xs">
-    <a aria-label="WhatsApp Restaurante Las Delicias" class="group flex items-center gap-space-sm pl-space-md pr-space-sm py-space-sm rounded-full bg-tertiary-container text-on-tertiary shadow-[0_8px_20px_-3px_rgba(78,42,28,0.25)] hover:bg-tertiary transition-all duration-300 transform hover:-translate-y-0.5" href="https://wa.me/50663572479?text=Hola%20Restaurante%20Las%20Delicias,%20deseo%20hacer%20un%20pedido%20o%20reserva" rel="noopener noreferrer" target="_blank">
+    <a aria-label="WhatsApp Restaurante Las Delicias" class="group flex items-center gap-space-sm pl-space-md pr-space-sm py-space-sm rounded-full bg-tertiary-container text-on-tertiary shadow-[0_8px_20px_-3px_rgba(78,42,28,0.25)] hover:bg-tertiary transition-all duration-300 transform hover:-translate-y-0.5" href="https://wa.me/50663572479?text=Hola%20Restaurante%20Las%20Delicias,%20quiero%20hacer%20un%20pedido%20o%20reserva" rel="noopener noreferrer" target="_blank">
       <span class="hidden md:inline font-bold text-xs text-on-tertiary">¡Pedí por WhatsApp!</span>
       <div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-tertiary-container shadow-inner">
         <span class="material-symbols-outlined text-[24px]">chat</span>
@@ -538,11 +533,11 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl">
         <div class="flex flex-col gap-space-sm">
           <div class="flex items-center gap-space-sm">
-            <img alt="Restaurante Las Delicias Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KFn-SECmKEcMwb5qM-MMCtUY3Uw_VPVd7xuB0Vs2cNvyFN5UE1pBIayYTHFi6q22LOvSppUnPmRSb_-6ZADhNs2E_RHk346el2VGAPTl_4e9rHkR6J2e5gTSJNRMIDInhJt-m2Eye1ejhEuJGDxdLCOrZV3g6XlQlJ0OjaNrrFnA-iYqu_GpJjHwwa0oCpNb5aV1mvTDuuBRRxFliXiYofmeQ78XK9C08eFvzIfX" width="32" height="32" loading="lazy" fetchpriority="low" decoding="async" style="width:32px;height:32px;aspect-ratio:32/32;flex:none"/>
+            <img alt="Restaurante Las Delicias Logo" class="h-8 w-auto object-contain" src="/images/dish-cc04bf996a00.webp" width="32" height="32" loading="lazy" fetchpriority="low" decoding="async" style="width:32px;height:32px;aspect-ratio:32/32;flex:none" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('image-fallback')">
             <span class="font-headline-sm text-lg font-bold text-primary">Las Delicias</span>
           </div>
           <p class="text-xs text-on-surface-variant leading-relaxed">
-            Auténtica gastronomía costarricense con más de 30 años llevando a su mesa el sazón casero, tortillas palmeadas y el calor de hogar en el corazón de Tibás.
+            Auténtica gastronomía costarricense con más de 30 años llevando a tu mesa el sazón casero, tortillas palmeadas y el calor de hogar en el corazón de Tibás.
           </p>
         </div>
 
@@ -553,11 +548,11 @@
             <span>Donde La Chinita, 25 metros sur del Restaurante Los Antojitos, diagonal sur, San Juan de Tibás, San José, Costa Rica</span>
           </div>
           <div class="flex flex-wrap gap-space-xs mt-space-xs">
-            <a class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://maps.app.goo.gl/wk6xeKJjS4p1Vvyk6" target="_blank" rel="noopener noreferrer">
+            <a class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante%20Las%20Delicias%20San%20Juan%20de%20Tib%C3%A1s%20Costa%20Rica" target="_blank" rel="noopener noreferrer" data-site-maps>
               <span class="material-symbols-outlined text-[16px] text-primary">map</span>
               <span>Google Maps</span>
             </a>
-            <a class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://waze.com/ul?q=Restaurante+Las+Delicias+Tibas" target="_blank" rel="noopener noreferrer">
+            <a class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-semibold text-xs hover:bg-surface-container-high transition-colors" href="https://waze.com/ul?q=Restaurante%20Las%20Delicias%20San%20Juan%20de%20Tib%C3%A1s%20Costa%20Rica" target="_blank" rel="noopener noreferrer" data-site-waze>
               <span class="material-symbols-outlined text-[16px] text-tertiary">navigation</span>
               <span>Waze</span>
             </a>
@@ -566,7 +561,7 @@
 
         <div class="flex flex-col gap-space-sm">
           <h3 class="font-bold text-base text-primary">Horario de Atención</h3>
-          <ul class="flex flex-col gap-space-xs text-xs text-on-surface-variant">
+          <ul data-hours-list="true" class="flex flex-col gap-space-xs text-xs text-on-surface-variant">
             <li class="flex justify-between items-center py-0.5">
               <span class="font-semibold text-on-surface">Lunes a Sábado:</span>
               <span>7:00 AM – 7:00 PM</span>
@@ -590,7 +585,7 @@
       </div>
 
       <div class="pt-space-lg border-t border-outline-variant/20 flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant text-xs">
-        <p>© 2025 Restaurante Las Delicias. Todos los derechos reservados. San Juan de Tibás, Costa Rica.</p>
+        <p>© <span data-current-year></span> Restaurante Las Delicias. Todos los derechos reservados. San Juan de Tibás, Costa Rica.</p>
         <p>Precios con 13% IVA y 10% servicio incluidos.</p>
       </div>
     </div>
@@ -601,7 +596,7 @@
     (function() {
       const dateInput = document.getElementById('resDate');
       if (dateInput) {
-        const today = new Date().toISOString().split('T')[0];
+        const today = (() => { const p = Object.fromEntries(new Intl.DateTimeFormat('en-CA', {timeZone:'America/Costa_Rica', year:'numeric', month:'2-digit', day:'2-digit'}).formatToParts(new Date()).map(x => [x.type,x.value])); return `${p.year}-${p.month}-${p.day}`; })();
         dateInput.min = today;
         dateInput.value = today;
       }
@@ -632,7 +627,7 @@
         const date = (dateInput && dateInput.value) ? dateInput.value : '';
         const time = (timeSelect && timeSelect.value) ? timeSelect.value : '';
         const guests = (guestsSelect && guestsSelect.value) ? guestsSelect.value : '';
-        const msg = encodeURIComponent(`Hola Restaurante Las Delicias Tibás, deseo solicitar una reserva para ${name}. Fecha: ${date}, Hora: ${time}, Personas: ${guests}, Ocasión: ${selectedOccasion}.`);
+        const msg = encodeURIComponent(`Hola Restaurante Las Delicias Tibás, quiero solicitar una reserva para ${name}. Fecha: ${date}, Hora: ${time}, Personas: ${guests}, Ocasión: ${selectedOccasion}.`);
         waButton.href = `https://wa.me/50663572479?text=${msg}`;
       }
 
@@ -642,32 +637,16 @@
       if (guestsSelect) guestsSelect.addEventListener('change', updateWaLink);
 
       const form = document.getElementById('reservationForm');
-      const successMsg = document.getElementById('formSuccessMessage');
-      if (form && successMsg) {
+      if (form) {
         form.addEventListener('submit', function(e) {
           e.preventDefault();
-          successMsg.classList.remove('hidden');
-          const submittedName = nameInput.value;
-          const submittedDate = dateInput.value;
-          const submittedTime = timeSelect.value;
-          const submittedGuests = guestsSelect.value;
-          
-          form.reset();
-          if (dateInput) {
-            const today = new Date().toISOString().split('T')[0];
-            dateInput.value = today;
-          }
-          
-          // Also optionally offer immediate WhatsApp confirmation
-          const openWa = confirm(`¡Gracias ${submittedName}! Solicitud registrada. ¿Desea abrir WhatsApp ahora para enviar la confirmación inmediata a nuestro personal en Tibás?`);
-          if (openWa) {
-            const msg = encodeURIComponent(`Hola Restaurante Las Delicias, acabo de llenar la solicitud de reserva para ${submittedName}. Fecha: ${submittedDate}, Hora: ${submittedTime}, Personas: ${submittedGuests}, Ocasión: ${selectedOccasion}.`);
-            window.open(`https://wa.me/50663572479?text=${msg}`, '_blank');
-          }
-
-          setTimeout(() => {
-            successMsg.classList.add('hidden');
-          }, 10000);
+          if (!form.reportValidity()) return;
+          const name = nameInput.value.trim();
+          const date = dateInput.value;
+          const time = timeSelect.value;
+          const guests = guestsSelect.value;
+          const msg = encodeURIComponent(`Hola Restaurante Las Delicias, quiero solicitar una reserva para ${name}. Fecha: ${date}, hora: ${time}, personas: ${guests}, ocasión: ${selectedOccasion}.`);
+          window.location.assign(`https://wa.me/50663572479?text=${msg}`);
         });
       }
 
